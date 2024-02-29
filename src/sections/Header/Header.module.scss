@@ -1,0 +1,12 @@
+.header {
+  background: var(--footer-header-bg);
+  border-bottom: 2px solid var(--border);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 9px 0;
+  }
+}

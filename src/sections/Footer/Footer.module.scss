@@ -1,0 +1,38 @@
+.footer {
+  background: var(--footer-header-bg);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 2px solid var(--border);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 70px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__polity {
+    display: inline-block;
+
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-color);
+
+    transition: opacity .4 ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
