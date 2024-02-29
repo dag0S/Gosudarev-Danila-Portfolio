@@ -67,7 +67,7 @@ export const promoData = {
   text: "Созданию современные адаптивные сайты и WEB-приложения.",
   btn: {
     text: "Связаться",
-    path: "contacts",
+    path: "/contacts",
   },
   hero: {
     img: hero,
@@ -98,5 +98,14 @@ export const promoData = {
       icon: promoReact,
       alt: "react",
     },
+  },
+};
+
+export const aboutMeData = {
+  title: "<Обо мне />",
+  text: "Меня зовут Данила, я Front-end разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React.",
+  btn: {
+    text: "подробнее",
+    path: "/about-me",
   },
 };
