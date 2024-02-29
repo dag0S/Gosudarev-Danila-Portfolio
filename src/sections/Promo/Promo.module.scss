@@ -1,0 +1,107 @@
+.promo {
+  padding-top: 130px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right-wrap {
+    position: relative;
+  }
+
+  &__left-wrap {
+    max-width: 517px;
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 96px;
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin-bottom: 36px;
+    line-height: 1.6;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  &__gradient-1 {
+    width: 1352px;
+    height: 1352px;
+    background: radial-gradient(
+      circle,
+      rgba(210, 0, 163, 0.59) 0%,
+      rgba(210, 0, 163, 0) 65%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    top: -514px;
+    left: -806px;
+  }
+
+  &__gradient-2 {
+    width: 1436px;
+    height: 1436px;
+    background: radial-gradient(
+      circle,
+      rgba(145, 103, 241, 1) 0%,
+      rgba(145, 103, 241, 0) 65%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    top: 262px;
+    right: -660px;
+  }
+}
+
+.icon-html {
+  position: absolute;
+  left: 1px;
+  bottom: 192px;
+}
+.icon-js {
+  position: absolute;
+  left: 220px;
+  bottom: 73px;
+}
+.icon-ts {
+  position: absolute;
+  right: 65px;
+  bottom: 146px;
+}
+.icon-css {
+  position: absolute;
+  top: 40px;
+  right: 235px;
+}
+.icon-redux {
+  position: absolute;
+  right: 15px;
+  bottom: 280px;
+}
+.icon-react {
+  position: absolute;
+  top: 83px;
+  left: 44px;
+}

@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   color: var(--text-color);
   background: var(--main-bg);
+  overflow-x: hidden;
 }
 
 .container {
@@ -33,5 +34,3 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
-
-
