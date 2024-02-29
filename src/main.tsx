@@ -1,14 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
+import MainLayout from "./layouts/MainLayout/MainLayout";
+import MainPage from "./pages/MainPage/MainPage";
 
 import "./scss/main.scss";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <MainPage />,
+      },
+    ],
   },
 ]);
 
