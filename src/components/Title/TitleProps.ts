@@ -2,5 +2,5 @@ import { ReactNode } from "react";
 
 export interface TitleProps {
   children: ReactNode;
-  className: string;
+  className?: string;
 }

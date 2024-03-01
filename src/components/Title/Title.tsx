@@ -4,7 +4,7 @@ import cn from "classnames";
 
 import styles from "./Title.module.scss";
 
-const Title: FC<TitleProps> = ({ children, className }) => {
+const Title: FC<TitleProps> = ({ children, className = ''}) => {
   return (
     <h2
       className={cn(styles["title"], {

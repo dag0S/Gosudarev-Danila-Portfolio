@@ -10,6 +10,9 @@ import promoTS from "../svg/promoTS.svg";
 import promoRedux from "../svg/promoRedux.svg";
 import promoCSS from "../svg/promoCSS.svg";
 import promoReact from "../svg/promoReact.svg";
+// WorkExamples
+import voiceTagLab from "../img/slide-1.png";
+import hotPizza from "../img/slide-2.png";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -66,7 +69,7 @@ export const promoData = {
   title: "<Государев \nДанила />",
   text: "Созданию современные адаптивные сайты и WEB-приложения.",
   btn: {
-    text: "Связаться",
+    text: "связаться",
     path: "/contacts",
   },
   hero: {
@@ -108,4 +111,20 @@ export const aboutMeData = {
     text: "подробнее",
     path: "/about-me",
   },
+};
+
+export const workExamplesData = {
+  title: "<Мои работы />",
+  slides: [
+    {
+      id: 1,
+      img: voiceTagLab,
+      alt: "Voice Tag Lab",
+    },
+    {
+      id: 2,
+      img: hotPizza,
+      alt: "Hot Pizza",
+    },
+  ],
 };
