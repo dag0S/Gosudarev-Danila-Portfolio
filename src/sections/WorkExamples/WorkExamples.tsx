@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Title from "../../components/Title/Title";
 import { workExamplesData } from "../../assets/data/data";
+// Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";

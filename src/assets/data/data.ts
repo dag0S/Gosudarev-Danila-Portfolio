@@ -13,6 +13,22 @@ import promoReact from "../svg/promoReact.svg";
 // WorkExamples
 import voiceTagLab from "../img/slide-1.png";
 import hotPizza from "../img/slide-2.png";
+// TechStack
+import react from "../svg/icons-tech/react.svg";
+import redux from "../svg/icons-tech/redux.svg";
+import router from "../svg/icons-tech/router.svg";
+import js from "../svg/icons-tech/js.svg";
+import ts from "../svg/icons-tech/ts.svg";
+import html from "../svg/icons-tech/html.svg";
+import css from "../svg/icons-tech/css.svg";
+import sass from "../svg/icons-tech/sass.svg";
+import figma from "../svg/icons-tech/figma.svg";
+import photoshop from "../svg/icons-tech/photoshop.svg";
+import npm from "../svg/icons-tech/npm.svg";
+import gulp from "../svg/icons-tech/gulp.svg";
+import git from "../svg/icons-tech/git.svg";
+import github from "../svg/icons-tech/github.svg";
+import vite from "../svg/icons-tech/vite.png";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -125,6 +141,105 @@ export const workExamplesData = {
       id: 2,
       img: hotPizza,
       alt: "Hot Pizza",
+    },
+  ],
+};
+
+export const techStackData = {
+  title: "<Tech Stack />",
+  rows: [
+    {
+      id: 1,
+      title: "Front-end",
+      icons: [
+        {
+          id: 1,
+          icon: react,
+          name: "React",
+        },
+        {
+          id: 2,
+          icon: redux,
+          name: "Redux Toolkit",
+        },
+        {
+          id: 8,
+          icon: router,
+          name: "React Router",
+        },
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 4,
+          icon: ts,
+          name: "TypeScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Graphics editor",
+      icons: [
+        {
+          id: 1,
+          icon: figma,
+          name: "Figma",
+        },
+        {
+          id: 2,
+          icon: photoshop,
+          name: "Photoshop",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "Other",
+      icons: [
+        {
+          id: 1,
+          icon: npm,
+          name: "npm",
+        },
+        {
+          id: 2,
+          icon: gulp,
+          name: "Gulp",
+        },
+        {
+          id: 3,
+          icon: git,
+          name: "git",
+        },
+        {
+          id: 4,
+          icon: github,
+          name: "gitHub",
+        },
+        {
+          id: 5,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
     },
   ],
 };
