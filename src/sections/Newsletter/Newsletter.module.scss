@@ -19,11 +19,7 @@
     background-position: center center;
     background-size: cover;
 
-    transition: box-shadow 0.4s ease-in-out;
-
-    &:hover {
-      box-shadow: 0 0 40px 0 var(--border);
-    }
+    box-shadow: 0 0 40px 0 var(--border);
   }
 
   &__title {
@@ -81,9 +77,15 @@
       cursor: pointer;
       user-select: none;
 
-      span {
+      a {
         color: var(--accent);
         text-decoration: underline;
+
+        transition: opacity 0.4s ease-in-out;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
 
       &::before {

@@ -31,9 +31,7 @@ const Newsletter: FC = () => {
               />
               <label htmlFor="isAccepted">
                 Соглашаюсь на условия &nbsp;
-                <span>
-                  <Link to="/">политики конфиденциальности</Link>
-                </span>
+                <Link to="/">политики конфиденциальности</Link>
               </label>
             </div>
           </form>
