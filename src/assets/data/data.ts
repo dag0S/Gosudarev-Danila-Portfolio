@@ -120,6 +120,7 @@ export const promoData = {
   },
 };
 
+// Содержимое секции AboutMe
 export const aboutMeData = {
   title: "<Обо мне />",
   text: "Меня зовут Данила, я Front-end разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React.",
@@ -129,6 +130,7 @@ export const aboutMeData = {
   },
 };
 
+// Содержимое секции WorkExamples
 export const workExamplesData = {
   title: "<Мои работы />",
   slides: [
@@ -145,6 +147,7 @@ export const workExamplesData = {
   ],
 };
 
+// Содержимое секции TechStack
 export const techStackData = {
   title: "<Tech Stack />",
   rows: [
@@ -242,4 +245,12 @@ export const techStackData = {
       ],
     },
   ],
+};
+
+// Содержимое секции Newsletter
+export const newsletterData = {
+  title: "Подпишитесь на E-mail рассылку",
+  text: "Если хотиет быть в курсе последних новостей и скидок - заполните форму ниже и оформите бесплатную E-mail рассылку!",
+  placeholder: "Ваш E-mail",
+  btnText: "отправить",
 };

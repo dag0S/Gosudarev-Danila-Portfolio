@@ -4,7 +4,7 @@ import { ButtonProps } from "./ButtonProps";
 
 import styles from "./Button.module.scss";
 
-const Button: FC<ButtonProps> = ({ children, path }) => {
+const Button: FC<ButtonProps> = ({ children, path = "" }) => {
   return (
     <Link to={path} className={styles["btn"]}>
       {children}
