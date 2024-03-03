@@ -5,6 +5,7 @@ import MainLayout from "./layouts/MainLayout/MainLayout";
 import MainPage from "./pages/MainPage/MainPage";
 
 import "./scss/main.scss";
+import WorksPage from "./pages/WorksPage/WorksPage";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <MainPage />,
+      },
+      {
+        path: "/works",
+        element: <WorksPage />,
       },
     ],
   },

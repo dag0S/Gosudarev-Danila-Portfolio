@@ -11,7 +11,7 @@ import promoRedux from "../svg/promoRedux.svg";
 import promoCSS from "../svg/promoCSS.svg";
 import promoReact from "../svg/promoReact.svg";
 // WorkExamples
-import voiceTagLab from "../img/slide-1.png";
+import imgVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-img.png";
 import hotPizza from "../img/slide-2.png";
 // TechStack
 import react from "../svg/icons-tech/react.svg";
@@ -29,6 +29,8 @@ import gulp from "../svg/icons-tech/gulp.svg";
 import git from "../svg/icons-tech/git.svg";
 import github from "../svg/icons-tech/github.svg";
 import vite from "../svg/icons-tech/vite.png";
+// Works
+import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.png";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -136,7 +138,7 @@ export const workExamplesData = {
   slides: [
     {
       id: 1,
-      img: voiceTagLab,
+      img: imgVoiceTagLab,
       alt: "Voice Tag Lab",
     },
     {
@@ -253,4 +255,86 @@ export const newsletterData = {
   text: "Если хотиет быть в курсе последних новостей и скидок - заполните форму ниже и оформите бесплатную E-mail рассылку!",
   placeholder: "Ваш E-mail",
   btnText: "отправить",
+};
+
+// Содержимое страницы Works
+export const worksPageData = {
+  title: "<Примеры работ />",
+  categories: ["верстка", "web-app"],
+  works: {
+    layouts: [
+      {
+        id: 1,
+        name: "Voice Tag Lab",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+        preview: previewVoiceTagLab,
+        img: imgVoiceTagLab,
+        linkGitHub: "https://github.com/dag0S/voice-tag-lab",
+        linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+        stack: [
+          {
+            id: 3,
+            icon: js,
+            name: "JavaScript",
+          },
+          {
+            id: 5,
+            icon: html,
+            name: "HTML",
+          },
+          {
+            id: 6,
+            icon: css,
+            name: "CSS",
+          },
+          {
+            id: 7,
+            icon: sass,
+            name: "SASS/SCSS",
+          },
+          {
+            id: 8,
+            icon: vite,
+            name: "Vite",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Voice Tag Lab",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+        preview: previewVoiceTagLab,
+        img: imgVoiceTagLab,
+        linkGitHub: "https://github.com/dag0S/voice-tag-lab",
+        linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+        stack: [
+          {
+            id: 3,
+            icon: js,
+            name: "JavaScript",
+          },
+          {
+            id: 5,
+            icon: html,
+            name: "HTML",
+          },
+          {
+            id: 6,
+            icon: css,
+            name: "CSS",
+          },
+          {
+            id: 7,
+            icon: sass,
+            name: "SASS/SCSS",
+          },
+          {
+            id: 8,
+            icon: vite,
+            name: "Vite",
+          },
+        ],
+      },
+    ],
+  },
 };

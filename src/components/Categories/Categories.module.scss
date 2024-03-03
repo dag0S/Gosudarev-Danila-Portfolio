@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  margin-bottom: 60px;
+}
+
+.item {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--text-color);
+
+  border-radius: 76px;
+  padding: 6px 36px;
+  background: var(--footer-header-bg);
+
+  cursor: pointer;
+
+  transition: box-shadow 0.2s ease-in-out, background .4s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 var(--accent-muted);
+  }
+
+  &__active {
+    background: var(--accent);
+  }
+}
