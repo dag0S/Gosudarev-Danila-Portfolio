@@ -1,0 +1,42 @@
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+
+  animation: anime 0.4s;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@keyframes anime {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}

@@ -2,12 +2,13 @@ import { FC } from "react";
 import { menuList } from "../../assets/data/data";
 
 import styles from "./Menu.module.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, ScrollRestoration } from "react-router-dom";
 import cn from "classnames";
 
 const Menu: FC = () => {
   return (
     <ul className={styles["menu"]}>
+      <ScrollRestoration/>
       {menuList.map((item) => (
         <li key={item.id}>
           <NavLink
