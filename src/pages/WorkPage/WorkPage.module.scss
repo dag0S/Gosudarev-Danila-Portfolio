@@ -1,0 +1,131 @@
+.work {
+  &__inner {
+    padding-top: 160px;
+  }
+
+  &__back {
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+
+  &__row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8fr 4fr;
+    gap: 84px;
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  &__btn-demo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6;
+    color: #0b0826;
+
+    background: var(--text-color);
+    border-radius: 92px;
+    padding: 12px 56px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+
+    path {
+      transition: fill 0.4s ease-in-out;
+      fill: #0b0826;
+    }
+
+    transition: all 0.4s ease-in-out;
+
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px 0 var(--accent-muted);
+    }
+  }
+
+  &__btn-github {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6;
+
+    background: #0b0826;
+    border-radius: 92px;
+    padding: 12px 56px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+
+    path {
+      transition: fill 0.4s ease-in-out;
+    }
+
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px 0 var(--accent-muted);
+    }
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__wrap-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__gradient {
+    width: 1352px;
+    height: 1352px;
+    background: radial-gradient(
+      circle,
+      rgba(210, 0, 163, 0.59) 0%,
+      rgba(210, 0, 163, 0) 70%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    top: -514px;
+    left: -806px;
+  }
+}

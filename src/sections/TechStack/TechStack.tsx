@@ -3,6 +3,7 @@ import { FC } from "react";
 import styles from "./TechStack.module.scss";
 import Title from "../../components/Title/Title";
 import { techStackData } from "../../assets/data/data";
+import TechnologyCard from "../../components/TechnologyCard/TechnologyCard";
 
 const TechStack: FC = () => {
   return (
@@ -14,16 +15,13 @@ const TechStack: FC = () => {
           </Title>
           <div className={styles["tech-stack__rows"]}>
             {techStackData.rows.map((row) => (
-              <div className={styles["tech-stack__row"]}>
+              <div className={styles["tech-stack__row"]} key={row.id}>
                 <div className={styles["tech-stack__row-title"]}>
                   {row.title}
                 </div>
                 <div className={styles["tech-stack__grid-icons"]}>
                   {row.icons.map((item) => (
-                    <div className={styles["tech-stack__icon"]} key={item.id}>
-                      <img src={item.icon} alt={item.name} />
-                      <div>{item.name}</div>
-                    </div>
+                    <TechnologyCard key={item.id} item={item} />
                   ))}
                 </div>
               </div>

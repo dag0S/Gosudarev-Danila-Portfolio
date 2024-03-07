@@ -32,6 +32,10 @@ import vite from "../svg/icons-tech/vite.png";
 // Works
 import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.png";
 import previewHotPizza from "../img/HotPizza/HotPizza-preview.png";
+// Work
+import arrowLeft from "../svg/arrow-left.svg";
+import btnDemo from "../svg/btn-demo.svg";
+import btnGitHub from "../svg/btn-git-hub.svg";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -376,4 +380,22 @@ export const worksPageData = {
       ],
     },
   ],
+};
+
+// Содержимое страницы Work
+export const workPageData = {
+  btnBack: {
+    text: "Все работы",
+    icon: arrowLeft,
+    url: "/works",
+  },
+  btnDemo: {
+    text: "смотреть демо",
+    icon: btnDemo,
+  },
+  btnGitHub: {
+    text: "смотреть код",
+    icon: btnGitHub,
+  },
+  sybTitle: "Инструменты",
 };

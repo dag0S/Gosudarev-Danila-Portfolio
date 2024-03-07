@@ -12,3 +12,9 @@ export interface socialsListProps {
   iconId: IconsID;
   url: string;
 }
+
+export interface IIcons {
+  id: number;
+  icon: string;
+  name: string;
+} 

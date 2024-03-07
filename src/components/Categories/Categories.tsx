@@ -1,15 +1,17 @@
 import { FC, useState } from "react";
 import { CategoriesProps } from "./CategoriesProps";
 import cn from "classnames";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { categoriesChange } from "../../redux/slices/worksSlice";
+import { RootState } from "../../redux/store";
 
 import styles from "./Categories.module.scss";
 
 const Categories: FC<CategoriesProps> = ({ list }) => {
-  const [isActive, setIsActive] = useState(0);
-
   const dispatch = useDispatch();
+  const category = useSelector((state: RootState) => state.works.categories)
+  
+  const [isActive, setIsActive] = useState(category);
 
   return (
     <div className={styles["list"]}>
