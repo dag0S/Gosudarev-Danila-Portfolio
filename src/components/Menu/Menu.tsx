@@ -2,7 +2,7 @@ import { FC } from "react";
 import { menuList } from "../../assets/data/data";
 
 import styles from "./Menu.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import cn from "classnames";
 
 const Menu: FC = () => {
@@ -10,12 +10,15 @@ const Menu: FC = () => {
     <ul className={styles["menu"]}>
       {menuList.map((item) => (
         <li key={item.id}>
-          <Link
+          <NavLink
             to={item.url}
-            className={cn(styles["link"], {
-              [styles["link__with-icon"]]: item.withIcon,
-            })}
-            target={item.withIcon ? "_blank" : ''}
+            className={({isActive}) =>
+              cn(styles["link"], {
+                [styles["link__with-icon"]]: item.withIcon,
+                [styles["link--active"]]: isActive,
+              })
+            }
+            target={item.withIcon ? "_blank" : ""}
             rel="noopener noreferrer"
           >
             {item.name}
@@ -42,7 +45,7 @@ const Menu: FC = () => {
                 </defs>
               </svg>
             )}
-          </Link>
+          </NavLink>
         </li>
       ))}
     </ul>

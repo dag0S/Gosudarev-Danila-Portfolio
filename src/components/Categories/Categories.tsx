@@ -1,11 +1,15 @@
 import { FC, useState } from "react";
 import { CategoriesProps } from "./CategoriesProps";
 import cn from "classnames";
+import { useDispatch } from "react-redux";
+import { categoriesChange } from "../../redux/slices/worksSlice";
 
 import styles from "./Categories.module.scss";
 
 const Categories: FC<CategoriesProps> = ({ list }) => {
   const [isActive, setIsActive] = useState(0);
+
+  const dispatch = useDispatch();
 
   return (
     <div className={styles["list"]}>
@@ -15,7 +19,10 @@ const Categories: FC<CategoriesProps> = ({ list }) => {
             [styles["item__active"]]: isActive === i,
           })}
           key={i}
-          onClick={() => setIsActive(i)}
+          onClick={() => {
+            dispatch(categoriesChange());
+            setIsActive(i);
+          }}
         >
           {item}
         </div>

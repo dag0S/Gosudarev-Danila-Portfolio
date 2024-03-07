@@ -27,4 +27,11 @@
     justify-content: center;
     gap: 6px;
   }
+
+  &--active {
+    color: var(--accent);
+    svg path {
+      fill: var(--accent);
+    }
+  }
 }
