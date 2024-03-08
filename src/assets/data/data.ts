@@ -140,18 +140,10 @@ export const aboutMeData = {
 // Содержимое секции WorkExamples
 export const workExamplesData = {
   title: "<Мои работы />",
-  slides: [
-    {
-      id: 1,
-      img: imgVoiceTagLab,
-      alt: "Voice Tag Lab",
-    },
-    {
-      id: 2,
-      img: imgHotPizza,
-      alt: "Hot Pizza",
-    },
-  ],
+  btn: {
+    text: "посмотреть все",
+    link: "/works",
+  },
 };
 
 // Содержимое секции TechStack
