@@ -9,12 +9,12 @@
   justify-content: center;
 
   position: fixed;
-  bottom: 50px;
+  top: 150px;
   right: 50px;
   z-index: 100;
 
   animation: anime 0.4s;
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 
   &:hover {
