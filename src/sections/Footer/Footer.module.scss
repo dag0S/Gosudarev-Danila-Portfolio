@@ -1,8 +1,16 @@
 .footer {
   background: var(--footer-header-bg);
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   border-top: 2px solid var(--border);
+
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
 
   &__top {
     display: flex;
@@ -10,6 +18,17 @@
     align-items: center;
 
     margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      ul {
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
   }
 
   &__bottom {
@@ -18,6 +37,10 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+
+    @media (max-width: 768px) {
+      gap: 40px;
+    }
   }
 
   &__polity {
@@ -30,6 +53,10 @@
     color: var(--text-color);
 
     transition: opacity 0.2s ease-in-out;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
 
     &:hover {
       opacity: 0.6;
