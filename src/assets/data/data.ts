@@ -89,7 +89,7 @@ export const socialsList: socialsListProps[] = [
 // Содержимое секции Promo
 export const promoData = {
   subTitle: "Front-end разработчик",
-  title: "<Государев \nДанила />",
+  title: "<Государев Данила\u00A0/>",
   text: "Созданию современные адаптивные сайты и WEB-приложения.",
   btn: {
     text: "связаться",

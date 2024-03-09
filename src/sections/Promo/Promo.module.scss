@@ -4,10 +4,34 @@
   position: relative;
   overflow: hidden;
 
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
   }
 
   &__right-wrap {
@@ -17,34 +41,106 @@
   &__hero {
     max-height: 800px;
     max-width: 100%;
+
+    @media (max-width: 1200px) {
+      max-height: 600px;
+    }
   }
 
   &__left-wrap {
     max-width: 517px;
+
+    @media (max-width: 1200px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 412px;
+    }
+
+    @media (max-width: 768px) {
+      min-width: 100%;
+
+      text-align: center;
+    }
   }
 
   &__sub-title {
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 10px;
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
     font-weight: 700;
     font-size: 96px;
     margin-bottom: 36px;
+    line-height: 1.2;
+
+    @media (max-width: 1200px) {
+      font-size: 60px;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
     font-size: 24px;
     margin-bottom: 36px;
     line-height: 1.6;
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__row {
     display: flex;
     align-items: center;
     gap: 56px;
+
+    @media (max-width: 1200px) {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 
   &__gradient-1 {
@@ -84,29 +180,120 @@
   position: absolute;
   left: 1px;
   bottom: 192px;
+
+  @media (max-width: 1200px) {
+    height: 100px;
+    left: 27px;
+    bottom: 141px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 70px;
+    left: 5%;
+    bottom: 25%;
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+  }
 }
 .icon-js {
   position: absolute;
   left: 220px;
   bottom: 73px;
+
+  @media (max-width: 1200px) {
+    height: 75px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 60px;
+    left: 37%;
+    bottom: 12%;
+  }
+
+  @media (max-width: 480px) {
+    height: 45px;
+  }
 }
 .icon-ts {
   position: absolute;
   right: 65px;
   bottom: 146px;
+
+  @media (max-width: 1200px) {
+    height: 70px;
+    bottom: 112px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 55px;
+    bottom: 21%;
+    right: 10%;
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+  }
 }
 .icon-css {
   position: absolute;
   top: 40px;
   right: 235px;
+
+  @media (max-width: 1200px) {
+    height: 70px;
+    top: 9px;
+    right: 197px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 65px;
+    top: 3%;
+    right: 29%;
+  }
+
+  @media (max-width: 480px) {
+    height: 55px;
+  }
 }
 .icon-redux {
   position: absolute;
   right: 15px;
   bottom: 280px;
+
+  @media (max-width: 1200px) {
+    height: 75px;
+    right: 6px;
+    bottom: 253px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 60px;
+    right: 2%;
+    bottom: 45%;
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+  }
 }
 .icon-react {
   position: absolute;
   top: 83px;
   left: 44px;
+
+  @media (max-width: 1200px) {
+    height: 70px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 65px;
+    top: 9%;
+    left: 11%;
+  }
+
+  @media (max-width: 480px) {
+    height: 55px;
+  }
 }
