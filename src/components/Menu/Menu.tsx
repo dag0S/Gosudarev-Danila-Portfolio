@@ -4,16 +4,17 @@ import { menuList } from "../../assets/data/data";
 import styles from "./Menu.module.scss";
 import { NavLink, ScrollRestoration } from "react-router-dom";
 import cn from "classnames";
+import { MenuProps } from "./MenuProps";
 
-const Menu: FC = () => {
+const Menu: FC<MenuProps> = ({ className, onClick }) => {
   return (
-    <ul className={styles["menu"]}>
-      <ScrollRestoration/>
+    <ul className={cn(styles["menu"], className)}>
+      <ScrollRestoration />
       {menuList.map((item) => (
         <li key={item.id}>
           <NavLink
             to={item.url}
-            className={({isActive}) =>
+            className={({ isActive }) =>
               cn(styles["link"], {
                 [styles["link__with-icon"]]: item.withIcon,
                 [styles["link--active"]]: isActive,
@@ -21,6 +22,7 @@ const Menu: FC = () => {
             }
             target={item.withIcon ? "_blank" : ""}
             rel="noopener noreferrer"
+            onClick={onClick}
           >
             {item.name}
             {item.withIcon && (

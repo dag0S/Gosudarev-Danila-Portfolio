@@ -1,7 +1,7 @@
 .header {
   background: var(--footer-header-bg);
   border-bottom: 2px solid var(--border);
-  
+
   position: fixed;
   z-index: 50;
   top: 0;
@@ -14,5 +14,38 @@
     align-items: center;
 
     padding: 9px 0;
+  }
+}
+
+.hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  z-index: 200;
+
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 24px;
+
+  background: var(--footer-header-bg);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+
+  &--active {
+    @media (max-width: 768px) {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
