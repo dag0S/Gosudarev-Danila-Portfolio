@@ -13,8 +13,10 @@ const AboutMe: FC = () => {
           <Title className={styles["about-me__title"]}>
             {aboutMeData.title}
           </Title>
-          <p className={styles["about-me__text"]}>{aboutMeData.text}</p>
-          <Button path={aboutMeData.btn.path}>{aboutMeData.btn.text}</Button>
+          <div className={styles["about-me__row"]}>
+            <p className={styles["about-me__text"]}>{aboutMeData.text}</p>
+            <Button path={aboutMeData.btn.path}>{aboutMeData.btn.text}</Button>
+          </div>
         </div>
       </div>
     </section>

@@ -15,6 +15,11 @@
 
   transition: background 0.4s ease-in-out, box-shadow 0.2s ease-in-out;
 
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+
   svg path {
     transition: fill 0.4s ease-in-out;
   }
