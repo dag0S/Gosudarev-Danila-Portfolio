@@ -1,7 +1,6 @@
 import { FC } from "react";
 
 import styles from "./Newsletter.module.scss";
-import Button from "../../components/Button/Button";
 import { newsletterData } from "../../assets/data/data";
 import { Link } from "react-router-dom";
 
@@ -20,7 +19,9 @@ const Newsletter: FC = () => {
                 type="email"
                 placeholder={newsletterData.placeholder}
               />
-              <Button>{newsletterData.btnText}</Button>
+              <button className={styles["btn"]}>
+                {newsletterData.btnText}
+              </button>
             </div>
             <div>
               <input

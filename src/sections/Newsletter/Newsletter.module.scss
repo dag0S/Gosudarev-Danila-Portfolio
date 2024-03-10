@@ -4,6 +4,16 @@
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 1024px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__container {
     max-width: 1182px;
     margin: 0 auto;
@@ -25,6 +35,14 @@
     &:hover {
       box-shadow: 0 0 60px 0 var(--border);
     }
+
+    @media (max-width: 1200px) {
+      padding: 30px 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 20px 30px;
+    }
   }
 
   &__title {
@@ -34,6 +52,15 @@
     text-transform: uppercase;
     color: var(--text-color);
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -43,12 +70,21 @@
     color: var(--text-color);
     margin-bottom: 20px;
     max-width: 600px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
   }
 
   &__form-input {
@@ -61,12 +97,31 @@
     font-size: 20px;
     line-height: 2.4;
     color: #000;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 5px 10px;
+      height: 46px;
+    }
   }
 
   &__form-row {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: stretch;
+
+      button {
+        text-align: center;
+      }
+    }
   }
 
   &__checkbox {
@@ -81,6 +136,13 @@
       color: var(--text-color);
       cursor: pointer;
       user-select: none;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
 
       a {
         color: var(--accent);
@@ -142,5 +204,34 @@
     z-index: -50;
     top: -806px;
     right: -656px;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  display: inline-block;
+  border-radius: 87px;
+  padding: 10px 30px;
+
+  background: linear-gradient(138deg, var(--accent) 0%, #6e3890 100%);
+
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 6px 20px;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 0 var(--accent-muted);
+  }
+
+  &:active {
+    transform: translateY(5px);
   }
 }
