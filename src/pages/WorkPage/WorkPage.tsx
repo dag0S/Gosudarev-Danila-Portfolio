@@ -27,22 +27,24 @@ const WorkPage: FC = () => {
             <div className={styles["work__wrap-text"]}>
               <Title className={styles["work__title"]}>{work?.name}</Title>
               <p className={styles["work__desc"]}>{work?.desc}</p>
-              <a
-                className={styles["work__btn-demo"]}
-                href={work?.linkDemo}
-                target="_blank"
-              >
-                {workPageData.btnDemo.text}
-                <img src={workPageData.btnDemo.icon} />
-              </a>
-              <a
-                className={styles["work__btn-github"]}
-                href={work?.linkGitHub}
-                target="_blank"
-              >
-                {workPageData.btnGitHub.text}
-                <img src={workPageData.btnGitHub.icon} />
-              </a>
+              <div className={styles["work__wrap-btn"]}>
+                <a
+                  className={styles["work__btn-demo"]}
+                  href={work?.linkDemo}
+                  target="_blank"
+                >
+                  {workPageData.btnDemo.text}
+                  <img src={workPageData.btnDemo.icon} />
+                </a>
+                <a
+                  className={styles["work__btn-github"]}
+                  href={work?.linkGitHub}
+                  target="_blank"
+                >
+                  {workPageData.btnGitHub.text}
+                  <img src={workPageData.btnGitHub.icon} />
+                </a>
+              </div>
             </div>
           </div>
           <div className={styles["work__wrap-bottom"]}>

@@ -15,7 +15,7 @@ const Header: FC = () => {
     <header className={styles["header"]}>
       <div className="container">
         <div className={styles["header__inner"]}>
-          <Logo />
+          <Logo onClick={() => setToggle(false)}/>
           <Menu className={styles["hidden"]} />
           <ButtonHamburger toggle={toggle} onClick={handlerToggle} />
           <Menu
