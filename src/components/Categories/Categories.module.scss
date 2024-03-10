@@ -5,6 +5,15 @@
   gap: 30px;
 
   margin-bottom: 60px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 20px;
+  }
 }
 
 .item {
@@ -18,10 +27,20 @@
 
   cursor: pointer;
 
-  transition: box-shadow 0.2s ease-in-out, background .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
 
   &:hover {
     box-shadow: 0 0 20px 0 var(--accent-muted);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 6px 20px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 6px 18px;
+    font-size: 24px;
   }
 
   &__active {

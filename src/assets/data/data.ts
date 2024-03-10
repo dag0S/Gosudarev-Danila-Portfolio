@@ -298,6 +298,43 @@ export const worksPageData = {
       ],
     },
     {
+      id: 3,
+      category: 0,
+      name: "Voice Tag Lab",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewVoiceTagLab,
+      img: imgVoiceTagLab,
+      linkGitHub: "https://github.com/dag0S/voice-tag-lab",
+      linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
       id: 2,
       category: 0,
       name: "Voice Tag Lab",
