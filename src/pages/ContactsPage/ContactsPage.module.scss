@@ -1,0 +1,157 @@
+.contacts {
+  padding-top: 200px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    padding-top: 130px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 50px;
+      align-items: start;
+    }
+  }
+
+  &__left {
+    padding-left: 40px;
+
+    @media (max-width: 768px) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 480px) {
+      padding-left: 0;
+    }
+  }
+
+  &__list {
+    font-size: 40px;
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 34px;
+
+    @media (max-width: 1200px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+
+    a {
+      transition: opacity 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    object-fit: contain;
+
+    @media (max-width: 1450px) {
+      height: 350px;
+    }
+
+    @media (max-width: 1310px) {
+      height: 290px;
+    }
+
+    @media (max-width: 1200px) {
+      height: 100%;
+      align-self: center;
+    }
+  }
+
+  &__gradient {
+    width: 1352px;
+    height: 1352px;
+    background: radial-gradient(
+      circle,
+      rgba(210, 0, 163, 0.59) 0%,
+      rgba(210, 0, 163, 0) 70%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    top: -514px;
+    left: -806px;
+  }
+}
+
+.icon {
+  position: relative;
+  padding-left: 52px;
+
+  @media (max-width: 768px) {
+    padding-left: 42px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+
+    @media (max-width: 1200px) {
+      top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      top: 0px;
+
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+
+    @media (max-width: 480px) {
+      top: -2px;
+    }
+  }
+
+  &--mail::before {
+    background-image: url("../../assets/svg/mail.svg");
+  }
+
+  &--phone::before {
+    background-image: url("../../assets/svg/phone.svg");
+  }
+}

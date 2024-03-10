@@ -8,6 +8,7 @@ import WorksPage from "./pages/WorksPage/WorksPage";
 import WorkPage from "./pages/WorkPage/WorkPage";
 
 import "./scss/main.scss";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/works/:id",
         element: <WorkPage />,
+      },
+      {
+        path: "/contacts",
+        element: <ContactsPage />,
       },
     ],
   },

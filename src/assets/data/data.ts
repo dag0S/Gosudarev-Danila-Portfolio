@@ -36,6 +36,8 @@ import previewHotPizza from "../img/HotPizza/HotPizza-preview.png";
 import arrowLeft from "../svg/arrow-left.svg";
 import btnDemo from "../svg/btn-demo.svg";
 import btnGitHub from "../svg/btn-git-hub.svg";
+// ContactsPage
+import contactsImg from "../img/contacts-img.png";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -427,4 +429,18 @@ export const workPageData = {
     icon: btnGitHub,
   },
   sybTitle: "Инструменты",
+};
+
+export const contactsPageData = {
+  title: "<Контакты />",
+  email: "danidagosudarev@gmail.com",
+  tel1: {
+    tel: "+7 (916) 681-98-17",
+    forLink: "+79166819817",
+  },
+  tel2: {
+    tel: "+7 (993) 362-01-05",
+    forLink: "+79933620105",
+  },
+  img: contactsImg,
 };
