@@ -1,27 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-export enum CATEGORIES {
-  layouts,
-  webApps,
-}
-
 export interface worksState {
-  categories: CATEGORIES;
+  categories: number;
 }
 
 const initialState: worksState = {
-  categories: CATEGORIES.layouts,
+  categories: 0,
 };
 
 export const worksSlice = createSlice({
   name: "works",
   initialState,
   reducers: {
-    categoriesChange: (state) => {
-      if (state.categories === CATEGORIES.layouts)
-        state.categories = CATEGORIES.webApps;
-      else state.categories = CATEGORIES.layouts;
+    categoriesChange: (state, action) => {
+      state.categories = action.payload;
+
+      // if (state.categories === CATEGORIES.layouts)
+      //   state.categories = CATEGORIES.webApps;
+      // else state.categories = CATEGORIES.layouts;
     },
   },
 });

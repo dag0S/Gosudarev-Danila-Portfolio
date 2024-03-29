@@ -94,7 +94,7 @@ export const socialsList: socialsListProps[] = [
 
 // Содержимое секции Promo
 export const promoData = {
-  subTitle: "Front-end разработчик",
+  subTitle: "Frontend разработчик",
   title: "<Государев Данила\u00A0/>",
   text: "Созданию современные адаптивные сайты и WEB-приложения.",
   btn: {
@@ -136,7 +136,7 @@ export const promoData = {
 // Содержимое секции AboutMe
 export const aboutMeData = {
   title: "<Обо мне />",
-  text: "Меня зовут Данила, я Front-end разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React.",
+  text: "Меня зовут Данила, я Frontend разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React.",
   btn: {
     text: "подробнее",
     path: "/about-me",
@@ -158,7 +158,7 @@ export const techStackData = {
   rows: [
     {
       id: 1,
-      title: "Front-end",
+      title: "Frontend",
       icons: [
         {
           id: 1,
@@ -452,7 +452,7 @@ export const contactsPageData = {
 export const aboutMePageData = {
   aboutMe: {
     title: "<Обо мне />",
-    text: "Привет, меня зовут Данила, я Front-end разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React. Мне 19 лет, живу в Котельника, учусь в Москве.",
+    text: "Привет, меня зовут Данила, я Frontend разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React. Мне 19 лет, живу в Котельника, учусь в Москве.",
     img: {
       path: heroAboutMe,
       alt: "Госудаерв Данила",

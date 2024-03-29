@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { CategoriesProps } from "./CategoriesProps";
 import cn from "classnames";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,21 +9,18 @@ import styles from "./Categories.module.scss";
 
 const Categories: FC<CategoriesProps> = ({ list }) => {
   const dispatch = useDispatch();
-  const category = useSelector((state: RootState) => state.works.categories)
-  
-  const [isActive, setIsActive] = useState(category);
+  const category = useSelector((state: RootState) => state.works.categories);
 
   return (
     <div className={styles["list"]}>
       {list.map((item, i) => (
         <div
           className={cn(styles["item"], {
-            [styles["item__active"]]: isActive === i,
+            [styles["item__active"]]: category === i,
           })}
           key={i}
           onClick={() => {
-            dispatch(categoriesChange());
-            setIsActive(i);
+            dispatch(categoriesChange(i));
           }}
         >
           {item}
