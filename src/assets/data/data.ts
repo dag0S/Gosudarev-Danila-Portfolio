@@ -38,6 +38,10 @@ import btnDemo from "../svg/btn-demo.svg";
 import btnGitHub from "../svg/btn-git-hub.svg";
 // ContactsPage
 import contactsImg from "../img/contacts-img.png";
+// aboutMePageData
+import heroAboutMe from "../img/hero-about-me.png";
+import rosnou from "../img/rosnou.png";
+import frontend from "../img/frontend.png";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -443,4 +447,29 @@ export const contactsPageData = {
     forLink: "+79933620105",
   },
   img: contactsImg,
+};
+
+export const aboutMePageData = {
+  aboutMe: {
+    title: "<Обо мне />",
+    text: "Привет, меня зовут Данила, я Front-end разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React. Мне 19 лет, живу в Котельника, учусь в Москве.",
+    img: {
+      path: heroAboutMe,
+      alt: "Госудаерв Данила",
+    },
+  },
+  studies: {
+    text: 'Я студент 2 курса РосНОУ (Российский Новый Университет). Учусь на направлении 09.03.01 Информатика и вычислительная техника, по специальности Безопасность информационных систем и вычислительной техники. Защитил курсовой проект на тему "Игра Arkanoid на C++".',
+    img: {
+      path: rosnou,
+      alt: "РосНОУ",
+    },
+  },
+  frontend: {
+    text: 'В начале первого курса в 2022 году начал изучать верстку (HTML, CSS, SCSS) по видео с YouTube, в ноябре того же года поступил на курс WEB-разработчик онлайн школы 1T Sprint, в которой получил диплом о профессиональной переподготовке, защитив командный проект "ВяЖу". После верстки нескольких лендингов, прошел курс по JavaScript, сделав несколько проектов на чистом JS. В сентябре 2023 начал изучать React и его библиотеки по курсам. Изучив основы React, приступил к изучению TypeScript и основам nodeJS.',
+    img: {
+      path: frontend,
+      alt: "frontend",
+    },
+  },
 };

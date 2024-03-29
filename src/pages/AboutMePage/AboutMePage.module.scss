@@ -1,0 +1,80 @@
+.text {
+  max-width: 622px;
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.about-me {
+  padding-top: 164px;
+  padding-bottom: 64px;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__gradient {
+    width: 1352px;
+    height: 1352px;
+    background: radial-gradient(
+      circle,
+      rgba(210, 0, 163, 0.59) 0%,
+      rgba(210, 0, 163, 0) 70%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    bottom: -709px;
+    left: -332px;
+  }
+}
+
+.studies {
+  padding: 64px 0 64px 0;
+  background: var(--secondary-bg);
+
+  &__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.frontend {
+  padding: 64px 0 64px 0;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__gradient {
+    width: 1436px;
+    height: 1436px;
+    background: radial-gradient(
+      circle,
+      rgba(145, 103, 241, 0.6) 0%,
+      rgba(145, 103, 241, 0) 65%
+    );
+    opacity: 0.37;
+
+    position: absolute;
+    z-index: -50;
+    top: -638px;
+    right: -471px;
+  }
+}

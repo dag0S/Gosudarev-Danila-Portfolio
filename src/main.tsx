@@ -9,6 +9,7 @@ import WorkPage from "./pages/WorkPage/WorkPage";
 
 import "./scss/main.scss";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import AboutMePage from "./pages/AboutMePage/AboutMePage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/contacts",
         element: <ContactsPage />,
+      },
+      {
+        path: "/about-me",
+        element: <AboutMePage />,
       },
     ],
   },
