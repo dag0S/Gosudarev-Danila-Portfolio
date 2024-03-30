@@ -1,15 +1,17 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout/MainLayout";
-import MainPage from "./pages/MainPage/MainPage";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
+
+import MainLayout from "./layouts/MainLayout/MainLayout";
+import MainPage from "./pages/MainPage/MainPage";
 import WorksPage from "./pages/WorksPage/WorksPage";
 import WorkPage from "./pages/WorkPage/WorkPage";
-
-import "./scss/main.scss";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import AboutMePage from "./pages/AboutMePage/AboutMePage";
+import NotFound from "./pages/NotFound/NotFound";
+
+import "./scss/main.scss";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/about-me",
         element: <AboutMePage />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },

@@ -473,3 +473,12 @@ export const aboutMePageData = {
     },
   },
 };
+
+export const NotFoundData = {
+  title: "Такой страницы не существует",
+  text: "Одно из двух: или кто-то ее удалил, или в ссылке опичатка",
+  btn: {
+    text: "на главную",
+    path: "/",
+  },
+};
