@@ -13,7 +13,16 @@ const Promo: FC = () => {
         <div className={styles["promo__left-wrap"]}>
           <h3 className={styles["promo__sub-title"]}>{promoData.subTitle}</h3>
           <h1 className={styles["promo__title"]}>{promoData.title}</h1>
-          <div className={styles["promo__text"]}>{promoData.text}</div>
+          <div
+            className={cn(styles["promo__text"], styles["promo__text--1"])}
+          >
+            {promoData.text1}
+          </div>
+          <div
+            className={cn(styles["promo__text"], styles["promo__text--2"])}
+          >
+            {promoData.text2}
+          </div>
           <div className={styles["promo__row"]}>
             <Button path={promoData.btn.path}>{promoData.btn.text}</Button>
             <Socials />

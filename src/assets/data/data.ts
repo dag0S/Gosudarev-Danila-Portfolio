@@ -96,7 +96,8 @@ export const socialsList: socialsListProps[] = [
 export const promoData = {
   subTitle: "Frontend разработчик",
   title: "<Государев Данила\u00A0/>",
-  text: "Созданию современные адаптивные сайты и WEB-приложения.",
+  text1: "Созданию современные адаптивные",
+  text2: "сайты и WEB-приложения.",
   btn: {
     text: "связаться",
     path: "/contacts",
