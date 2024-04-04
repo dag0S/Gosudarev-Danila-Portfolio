@@ -1,6 +1,6 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { workPageData, worksPageData } from "../../assets/data/data";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import styles from "./WorkPage.module.scss";
 import Title from "../../components/Title/Title";
@@ -8,7 +8,14 @@ import TechnologyCard from "../../components/TechnologyCard/TechnologyCard";
 
 const WorkPage: FC = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const work = worksPageData.works.find((item) => item.id.toString() === id);
+
+  useEffect(() => {
+    if (!work) {
+      navigate("/not-found");
+    }
+  }, [work, navigate]);
 
   return (
     <section className={styles["work"]}>
