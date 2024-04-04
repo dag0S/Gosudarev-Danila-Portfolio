@@ -1,10 +1,11 @@
 import { FC } from "react";
+import cn from "classnames";
 
-import styles from "./Promo.module.scss";
 import { promoData } from "../../assets/data/data";
 import Button from "../../components/Button/Button";
 import Socials from "../../components/Socials/Socials";
-import cn from "classnames";
+
+import styles from "./Promo.module.scss";
 
 const Promo: FC = () => {
   return (

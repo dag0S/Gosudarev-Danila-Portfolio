@@ -33,7 +33,6 @@ const WorksPage: FC = () => {
                       className={styles["work__img"]}
                       style={{ backgroundImage: `url(${work.preview})` }}
                     />
-                    <div className={styles["work__img-overlay"]} />
                   </div>
                   <h5 className={styles["work__title"]}>{work.name}</h5>
                 </Link>

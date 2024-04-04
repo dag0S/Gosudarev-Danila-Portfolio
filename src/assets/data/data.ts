@@ -13,6 +13,23 @@ import promoReact from "../svg/promoReact.svg";
 // WorkExamples
 import imgVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-img.png";
 import imgHotPizza from "../img/HotPizza/HotPizza-img.png";
+import imgLamborghini from "../img/Lamborghini/Lamborghini-img.png";
+import imgOculus from "../img/Oculus/Oculus-img.png";
+import imgHooBank from "../img/HooBank/HooBank-img.png";
+import imgLoftHouse from "../img/LoftHouse/LoftHouse-img.png";
+import imgDMLeasing from "../img/DMLeasing/DMLeasing-img.png";
+import imgVyazhu from "../img/Vyazhu/Vyazhu-img.png";
+import imgGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-img.png";
+// Works
+import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.png";
+import previewHotPizza from "../img/HotPizza/HotPizza-preview.png";
+import previewLamborghini from "../img/Lamborghini/Lamborghini-preview.png";
+import previewOculus from "../img/Oculus/Oculus-preview.png";
+import previewHooBank from "../img/HooBank/HooBank-preview.png";
+import previewLoftHouse from "../img/LoftHouse/LoftHouse-preview.png";
+import previewDMLeasing from "../img/DMLeasing/DMLeasing-preview.png";
+import previewVyazhu from "../img/Vyazhu/Vyazhu-preview.png";
+import previewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview.png";
 // TechStack
 import react from "../svg/icons-tech/react.svg";
 import redux from "../svg/icons-tech/redux.svg";
@@ -29,9 +46,6 @@ import gulp from "../svg/icons-tech/gulp.svg";
 import git from "../svg/icons-tech/git.svg";
 import github from "../svg/icons-tech/github.svg";
 import vite from "../svg/icons-tech/vite.png";
-// Works
-import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.png";
-import previewHotPizza from "../img/HotPizza/HotPizza-preview.png";
 // Work
 import arrowLeft from "../svg/arrow-left.svg";
 import btnDemo from "../svg/btn-demo.svg";
@@ -52,7 +66,7 @@ export const menuList: menuListProps[] = [
   },
   {
     id: 2,
-    name: "Примеры работы",
+    name: "Портфолио",
     url: "/works",
   },
   {
@@ -263,7 +277,7 @@ export const newsletterData = {
 
 // Содержимое страницы Works
 export const worksPageData = {
-  title: "<Примеры работ />",
+  title: "<Портфолио />",
   categories: ["верстка", "web-app"],
   btnText: "подробнее",
   works: [
@@ -307,12 +321,12 @@ export const worksPageData = {
     {
       id: 3,
       category: 0,
-      name: "Voice Tag Lab",
+      name: "Lamborghini",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
-      preview: previewVoiceTagLab,
-      img: imgVoiceTagLab,
-      linkGitHub: "https://github.com/dag0S/voice-tag-lab",
-      linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+      preview: previewLamborghini,
+      img: imgLamborghini,
+      linkGitHub: "https://github.com/dag0S/Lamborghini",
+      linkDemo: "https://lamborghini-demo.netlify.app/",
       stack: [
         {
           id: 3,
@@ -344,12 +358,160 @@ export const worksPageData = {
     {
       id: 2,
       category: 0,
-      name: "Voice Tag Lab",
+      name: "Oculus",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
-      preview: previewVoiceTagLab,
-      img: imgVoiceTagLab,
-      linkGitHub: "https://github.com/dag0S/voice-tag-lab",
-      linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+      preview: previewOculus,
+      img: imgOculus,
+      linkGitHub: "https://github.com/dag0S/Oculus",
+      linkDemo: "https://oculus-demo-1-0-1.netlify.app/",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
+      id: 4,
+      category: 0,
+      name: "HooBank",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewHooBank,
+      img: imgHooBank,
+      linkGitHub: "https://github.com/dag0S/HooBank",
+      linkDemo: "https://genuine-griffin-680248.netlify.app",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
+      id: 5,
+      category: 0,
+      name: "LoftHouse",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewLoftHouse,
+      img: imgLoftHouse,
+      linkGitHub: "https://github.com/dag0S/loft-house",
+      linkDemo: "https://loft-house-demo.netlify.app/",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
+      id: 6,
+      category: 0,
+      name: "D&M Leasing",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewDMLeasing,
+      img: imgDMLeasing,
+      linkGitHub: "https://github.com/dag0S/Cars",
+      linkDemo: "https://cars-demo-1-0-1.netlify.app/",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
+      id: 7,
+      category: 0,
+      name: "ВяЖу",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewVyazhu,
+      img: imgVyazhu,
+      linkGitHub: "https://github.com/dag0S/vyazhu",
+      linkDemo: "https://iw966675.sprint.1t.ru/index.php",
       stack: [
         {
           id: 3,
@@ -387,6 +549,43 @@ export const worksPageData = {
       img: imgHotPizza,
       linkGitHub: "https://github.com/dag0S/voice-tag-lab",
       linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+      stack: [
+        {
+          id: 3,
+          icon: js,
+          name: "JavaScript",
+        },
+        {
+          id: 5,
+          icon: html,
+          name: "HTML",
+        },
+        {
+          id: 6,
+          icon: css,
+          name: "CSS",
+        },
+        {
+          id: 7,
+          icon: sass,
+          name: "SASS/SCSS",
+        },
+        {
+          id: 8,
+          icon: vite,
+          name: "Vite",
+        },
+      ],
+    },
+    {
+      id: 8,
+      category: 1,
+      name: "Gosudarev Danila",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      preview: previewGosudarevDanila,
+      img: imgGosudarevDanila,
+      linkGitHub: "https://github.com/dag0S/Gosudarev-Danila-Portfolio",
+      linkDemo: "https://gosudarev-danila.netlify.app/",
       stack: [
         {
           id: 3,

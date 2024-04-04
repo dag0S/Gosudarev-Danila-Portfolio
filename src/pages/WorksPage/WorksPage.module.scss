@@ -81,7 +81,10 @@
 
   &:hover {
     .work__img {
-      backdrop-filter: blur(4px);
+      transform: scale(1.01);
+    }
+    .work__img-wrap {
+      box-shadow: 0 0 16px 0 var(--accent-muted-2);
     }
     .work__img-overlay {
       opacity: 1;
@@ -97,6 +100,12 @@
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
+
+    transition: box-shadow 0.2s ease-in-out;
+
+    @media (max-width: 768px) {
+      border-radius: 10px;
+    }
   }
 
   &__img {
@@ -105,32 +114,7 @@
     background-size: cover;
     background-position: center center;
 
-    transition: backdrop-filter 0.3s ease-in-out;
-  }
-
-  &__img-overlay {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(34, 30, 65, 0.62);
-    mix-blend-mode: color;
-  }
-
-  &__img-btn {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    box-shadow: 0 0 20px 0 var(--accent-muted);
+    transition: transform 0.5s ease-in-out;
   }
 
   &__title {

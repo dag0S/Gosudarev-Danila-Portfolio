@@ -19,6 +19,7 @@
 .item {
   font-weight: 700;
   font-size: 40px;
+  user-select: none; 
   color: var(--text-color);
 
   border-radius: 76px;
