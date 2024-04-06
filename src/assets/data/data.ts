@@ -541,14 +541,14 @@ export const worksPageData = {
       ],
     },
     {
-      id: 3,
+      id: 8,
       category: 1,
       name: "Hot Pizza",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
       preview: previewHotPizza,
       img: imgHotPizza,
-      linkGitHub: "https://github.com/dag0S/voice-tag-lab",
-      linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
+      linkGitHub: "https://github.com/dag0S/hot-pizza-spa-app",
+      linkDemo: "https://pizza-hot-spa.netlify.app/",
       stack: [
         {
           id: 3,
@@ -578,7 +578,7 @@ export const worksPageData = {
       ],
     },
     {
-      id: 8,
+      id: 9,
       category: 1,
       name: "Gosudarev Danila",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
