@@ -30,22 +30,7 @@ import previewLoftHouse from "../img/LoftHouse/LoftHouse-preview.png";
 import previewDMLeasing from "../img/DMLeasing/DMLeasing-preview.png";
 import previewVyazhu from "../img/Vyazhu/Vyazhu-preview.png";
 import previewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview.png";
-// TechStack
-import react from "../svg/icons-tech/react.svg";
-import redux from "../svg/icons-tech/redux.svg";
-import router from "../svg/icons-tech/router.svg";
-import js from "../svg/icons-tech/js.svg";
-import ts from "../svg/icons-tech/ts.svg";
-import html from "../svg/icons-tech/html.svg";
-import css from "../svg/icons-tech/css.svg";
-import sass from "../svg/icons-tech/sass.svg";
-import figma from "../svg/icons-tech/figma.svg";
-import photoshop from "../svg/icons-tech/photoshop.svg";
-import npm from "../svg/icons-tech/npm.svg";
-import gulp from "../svg/icons-tech/gulp.svg";
-import git from "../svg/icons-tech/git.svg";
-import github from "../svg/icons-tech/github.svg";
-import vite from "../svg/icons-tech/vite.png";
+
 // Work
 import arrowLeft from "../svg/arrow-left.svg";
 import btnDemo from "../svg/btn-demo.svg";
@@ -56,6 +41,8 @@ import contactsImg from "../img/contacts-img.png";
 import heroAboutMe from "../img/hero-about-me.png";
 import rosnou from "../img/rosnou.png";
 import frontend from "../img/frontend.png";
+// Эл-ты тех. скилла
+import { listTechs } from "./listTechs";
 
 // Список меню Menu
 export const menuList: menuListProps[] = [
@@ -175,93 +162,30 @@ export const techStackData = {
       id: 1,
       title: "Frontend",
       icons: [
-        {
-          id: 1,
-          icon: react,
-          name: "React",
-        },
-        {
-          id: 2,
-          icon: redux,
-          name: "Redux Toolkit",
-        },
-        {
-          id: 8,
-          icon: router,
-          name: "React Router",
-        },
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 4,
-          icon: ts,
-          name: "TypeScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
+        listTechs.react,
+        listTechs.redux,
+        listTechs.router,
+        listTechs.javascript,
+        listTechs.typescript,
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
       ],
     },
     {
       id: 2,
       title: "Graphics editor",
-      icons: [
-        {
-          id: 1,
-          icon: figma,
-          name: "Figma",
-        },
-        {
-          id: 2,
-          icon: photoshop,
-          name: "Photoshop",
-        },
-      ],
+      icons: [listTechs.figma, listTechs.photoshop],
     },
     {
       id: 3,
       title: "Other",
       icons: [
-        {
-          id: 1,
-          icon: npm,
-          name: "npm",
-        },
-        {
-          id: 2,
-          icon: gulp,
-          name: "Gulp",
-        },
-        {
-          id: 3,
-          icon: git,
-          name: "git",
-        },
-        {
-          id: 4,
-          icon: github,
-          name: "gitHub",
-        },
-        {
-          id: 5,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.npm,
+        listTechs.gulp,
+        listTechs.git,
+        listTechs.gitHub,
+        listTechs.vite,
       ],
     },
   ],
@@ -285,333 +209,155 @@ export const worksPageData = {
       id: 1,
       category: 0,
       name: "Voice Tag Lab",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "Проект Voice Tag Lab - это незаменимая вещь для каждого битмейкера, с возможностью выбрать любой из ихголосов, и выделиться.",
       preview: previewVoiceTagLab,
       img: imgVoiceTagLab,
       linkGitHub: "https://github.com/dag0S/voice-tag-lab",
       linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.vite,
       ],
     },
     {
       id: 3,
       category: 0,
       name: "Lamborghini",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "Итальянская компания, производитель спортивных автомобилей под маркой Lamborghini. Данный лендинг информирует о гранд-финале гонок.",
       preview: previewLamborghini,
       img: imgLamborghini,
       linkGitHub: "https://github.com/dag0S/Lamborghini",
       linkDemo: "https://lamborghini-demo.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.gulp,
       ],
     },
     {
       id: 2,
       category: 0,
       name: "Oculus",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "Oculus - это очки виртуальной реальности будущего. Данный страница рекламирует данный продукт.",
       preview: previewOculus,
       img: imgOculus,
       linkGitHub: "https://github.com/dag0S/Oculus",
       linkDemo: "https://oculus-demo-1-0-1.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.gulp,
       ],
     },
     {
       id: 4,
       category: 0,
       name: "HooBank",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "HooBank – инновационный банк. На этом лендинге мы рассказываем о возможностях и фичах этого банка. Сайт создан с использованием React и библиотеки стилей Tailwind.",
       preview: previewHooBank,
       img: imgHooBank,
       linkGitHub: "https://github.com/dag0S/HooBank",
       linkDemo: "https://genuine-griffin-680248.netlify.app",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.react,
+        listTechs.javascript,
+        listTechs.vite,
+        listTechs.html,
+        listTechs.css,
       ],
     },
     {
       id: 5,
       category: 0,
       name: "LoftHouse",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "LoftHouse – это жилой комплекс, расположенный в историческом центре города. Данный одностраничный сайт призван познакомить вас со всеми преимуществами этого места.",
       preview: previewLoftHouse,
       img: imgLoftHouse,
       linkGitHub: "https://github.com/dag0S/loft-house",
       linkDemo: "https://loft-house-demo.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.gulp,
       ],
     },
     {
       id: 6,
       category: 0,
       name: "D&M Leasing",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "D&M Leasing – сайт по приобретению автомобилей, который состоит из нескольких страниц, написанных на чистом HTML и CSS.",
       preview: previewDMLeasing,
       img: imgDMLeasing,
       linkGitHub: "https://github.com/dag0S/Cars",
       linkDemo: "https://cars-demo-1-0-1.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.gulp,
       ],
     },
     {
       id: 7,
       category: 0,
       name: "ВяЖу",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "ВяЖу - это один из первых моих проектов, над которым я работал в команде на курсе по web-разработке. Сайт из себя представляет небольшой сборник статей и видео посвященных вязанию и шитью. Я работал над проектом «ВяЖу» в команде на курсе по веб-разработке. Это был один из моих первых проектов. Сайт представляет собой небольшой сборник статей и видео о вязании и шитье.",
       preview: previewVyazhu,
       img: imgVyazhu,
       linkGitHub: "https://github.com/dag0S/vyazhu",
       linkDemo: "https://iw966675.sprint.1t.ru/index.php",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.html,
+        listTechs.css,
+        listTechs.sass,
+        listTechs.javascript,
+        listTechs.php,
       ],
     },
     {
       id: 8,
       category: 1,
       name: "Hot Pizza",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "HotPizza – это проект, на котором я имел возможность усовершенствовать свои навыки работы с react и redux toolkit. Он представляет собой онлайн-магазин пиццы.",
       preview: previewHotPizza,
       img: imgHotPizza,
       linkGitHub: "https://github.com/dag0S/hot-pizza-spa-app",
       linkDemo: "https://pizza-hot-spa.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.react,
+        listTechs.redux,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.vite,
+        listTechs.sass,
       ],
     },
     {
       id: 9,
       category: 1,
       name: "Gosudarev Danila",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae sapiente deleniti. Saepe odio, quis ex, minus quidem nam debitis at voluptate modi, labore alias nulla possimus esse obcaecati in?",
+      desc: "Gosudarev Danila – это мой сайт-портфолио, который вы сейчас видите. Я создал его с нуля, начиная с дизайна и заканчивая настройкой и развертыванием.",
       preview: previewGosudarevDanila,
       img: imgGosudarevDanila,
       linkGitHub: "https://github.com/dag0S/Gosudarev-Danila-Portfolio",
       linkDemo: "https://gosudarev-danila.netlify.app/",
       stack: [
-        {
-          id: 3,
-          icon: js,
-          name: "JavaScript",
-        },
-        {
-          id: 5,
-          icon: html,
-          name: "HTML",
-        },
-        {
-          id: 6,
-          icon: css,
-          name: "CSS",
-        },
-        {
-          id: 7,
-          icon: sass,
-          name: "SASS/SCSS",
-        },
-        {
-          id: 8,
-          icon: vite,
-          name: "Vite",
-        },
+        listTechs.react,
+        listTechs.redux,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.vite,
+        listTechs.sass,
       ],
     },
   ],
