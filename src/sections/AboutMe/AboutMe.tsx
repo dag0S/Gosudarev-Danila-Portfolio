@@ -1,25 +1,61 @@
 import { FC } from "react";
+import { MTitle } from "../../components/Title/Title";
+import { aboutMeData } from "../../assets/data/data";
+import { MButton } from "../../components/Button/Button";
+import { motion } from "framer-motion";
 
 import styles from "./AboutMe.module.scss";
-import Title from "../../components/Title/Title";
-import { aboutMeData } from "../../assets/data/data";
-import Button from "../../components/Button/Button";
+
+const leftToRightAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: custom * 0.2,
+    },
+  }),
+};
 
 const AboutMe: FC = () => {
   return (
-    <section className={styles["about-me"]}>
+    <motion.section
+      className={styles["about-me"]}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="container">
         <div className={styles["about-me__inner"]}>
-          <Title className={styles["about-me__title"]}>
+          <MTitle
+            className={styles["about-me__title"]}
+            custom={1}
+            variants={leftToRightAnimation}
+          >
             {aboutMeData.title}
-          </Title>
+          </MTitle>
           <div className={styles["about-me__row"]}>
-            <p className={styles["about-me__text"]}>{aboutMeData.text}</p>
-            <Button path={aboutMeData.btn.path}>{aboutMeData.btn.text}</Button>
+            <motion.p
+              className={styles["about-me__text"]}
+              custom={2}
+              variants={leftToRightAnimation}
+            >
+              {aboutMeData.text}
+            </motion.p>
+            <MButton
+              custom={1}
+              variants={leftToRightAnimation}
+              path={aboutMeData.btn.path}
+            >
+              {aboutMeData.btn.text}
+            </MButton>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

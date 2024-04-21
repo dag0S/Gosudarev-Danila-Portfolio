@@ -25,7 +25,7 @@ const WorkExamples: FC = () => {
             effect={"fade"}
             modules={[EffectFade, Autoplay]}
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             allowTouchMove={false}
