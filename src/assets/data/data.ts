@@ -79,7 +79,7 @@ export const socialsList: socialsListProps[] = [
   {
     id: 1,
     iconId: IconsID.VK,
-    url: "https://vk.com/tovar_dlr_givotnblx",
+    url: "https://vk.com/dag0s",
   },
   {
     id: 2,
