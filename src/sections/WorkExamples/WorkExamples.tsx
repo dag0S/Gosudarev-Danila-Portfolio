@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Title from "../../components/Title/Title";
+import Button from "../../components/Button/Button";
 import { workExamplesData, worksPageData } from "../../assets/data/data";
+import { motion } from "framer-motion";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,13 +12,35 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay } from "swiper/modules";
 
 import styles from "./WorkExamples.module.scss";
-import Button from "../../components/Button/Button";
+
+const bottomToTopAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: custom * 0.3,
+    },
+  }),
+};
 
 const WorkExamples: FC = () => {
   return (
-    <section className={styles["work-examples"]}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className={styles["work-examples"]}
+    >
       <div className="container">
-        <div className={styles["work-examples__inner"]}>
+        <motion.div
+          variants={bottomToTopAnimation}
+          custom={1}
+          className={styles["work-examples__inner"]}
+        >
           <Title className={styles["work-examples__title"]}>
             {workExamplesData.title}
           </Title>
@@ -54,11 +78,11 @@ const WorkExamples: FC = () => {
                 )
             )}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
       <div className={styles["work-examples__gradient-1"]} />
       <div className={styles["work-examples__gradient-2"]} />
-    </section>
+    </motion.section>
   );
 };
 
