@@ -1,56 +1,117 @@
 import { FC } from "react";
+import { motion } from "framer-motion";
 
-import styles from "./AboutMePage.module.scss";
 import Title from "../../components/Title/Title";
 import { aboutMePageData } from "../../assets/data/data";
+
+import styles from "./AboutMePage.module.scss";
+
+const leftToRightAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.4,
+    },
+  },
+};
+
+const rightToLeftAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.4,
+    },
+  },
+};
 
 const AboutMePage: FC = () => {
   return (
     <>
-      <section className={styles["about-me"]}>
+      <motion.section
+        className={styles["about-me"]}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="container">
           <div className={styles["about-me__inner"]}>
-            <div className={styles["about-me__text-wrap"]}>
+            <motion.div
+              className={styles["about-me__text-wrap"]}
+              variants={leftToRightAnimation}
+            >
               <Title className={styles["about-me__title"]}>
                 {aboutMePageData.aboutMe.title}
               </Title>
               <div className={styles["text"]}>
                 {aboutMePageData.aboutMe.text}
               </div>
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              variants={rightToLeftAnimation}
               src={aboutMePageData.aboutMe.img.path}
               alt={aboutMePageData.aboutMe.img.alt}
             />
           </div>
         </div>
         <div className={styles["about-me__gradient"]} />
-      </section>
-      <section className={styles["studies"]}>
+      </motion.section>
+      <motion.section
+        className={styles["studies"]}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <div className="container">
           <div className={styles["studies__inner"]}>
-            <div className={styles["text"]}>{aboutMePageData.studies.text}</div>
-            <img
+            <motion.div
+              className={styles["text"]}
+              variants={rightToLeftAnimation}
+            >
+              {aboutMePageData.studies.text}
+            </motion.div>
+            <motion.img
+              variants={leftToRightAnimation}
               src={aboutMePageData.studies.img.path}
               alt={aboutMePageData.studies.img.alt}
             />
           </div>
         </div>
-      </section>
-      <section className={styles["frontend"]}>
+      </motion.section>
+      <motion.section
+        className={styles["frontend"]}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <div className="container">
           <div className={styles["frontend__inner"]}>
-            <div className={styles["text"]}>
+            <motion.div
+              className={styles["text"]}
+              variants={leftToRightAnimation}
+            >
               {aboutMePageData.frontend.text}
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              variants={rightToLeftAnimation}
               src={aboutMePageData.frontend.img.path}
               alt={aboutMePageData.frontend.img.alt}
             />
           </div>
         </div>
         <div className={styles["frontend__gradient"]} />
-      </section>
+      </motion.section>
     </>
   );
 };
