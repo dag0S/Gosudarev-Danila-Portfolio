@@ -150,7 +150,7 @@
       }
 
       margin-bottom: 5px;
-      animation: typing 3.5s steps(31), blink 0.5s step-end 7 alternate;
+      animation: typing 2s steps(31), blink 0.5s step-end 4 alternate;
       border-color: transparent;
     }
 
@@ -169,8 +169,8 @@
         width: 203px;
       }
 
-      animation: typing 2s steps(23) 3.5s,
-        blink 0.5s step-end infinite alternate 3.5s backwards;
+      animation: typing 2s steps(23) 2s,
+        blink 0.5s step-end infinite alternate 2s backwards;
       animation-fill-mode: backwards;
       border-color: transparent;
     }
