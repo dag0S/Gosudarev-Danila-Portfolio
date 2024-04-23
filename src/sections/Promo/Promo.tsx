@@ -11,6 +11,7 @@ import Button from "../../components/Button/Button";
 import Socials from "../../components/Socials/Socials";
 
 import styles from "./Promo.module.scss";
+import ProgressiveImage from "../../components/ProgressiveImage/ProgressiveImage";
 
 const bottomToTopAnimation = {
   hidden: {
@@ -55,19 +56,24 @@ const Promo: FC = () => {
             >
               {promoData.title}
             </motion.h1>
-            <div
-              className={cn(styles["promo__text"], styles["promo__text--1"])}
-            >
-              {promoData.text1}
-            </div>
-            <div
-              className={cn(styles["promo__text"], styles["promo__text--2"])}
-            >
-              {promoData.text2}
-            </div>
             <motion.div
               variants={bottomToTopAnimation}
               custom={3}
+            >
+              <div
+                className={cn(styles["promo__text"], styles["promo__text--1"])}
+              >
+                {promoData.text1}
+              </div>
+              <div
+                className={cn(styles["promo__text"], styles["promo__text--2"])}
+              >
+                {promoData.text2}
+              </div>
+            </motion.div>
+            <motion.div
+              variants={bottomToTopAnimation}
+              custom={4}
               className={styles["promo__row"]}
             >
               <Button path={promoData.btn.path}>{promoData.btn.text}</Button>
@@ -76,8 +82,9 @@ const Promo: FC = () => {
           </div>
           <div className={styles["promo__right-wrap"]}>
             <MouseParallaxChild factorX={0.1} factorY={0.1}>
-              <img
+              <ProgressiveImage
                 className={styles["promo__hero"]}
+                placeholderSrc={promoData.hero.tinyImg}
                 src={promoData.hero.img}
                 alt={promoData.hero.alt}
               />

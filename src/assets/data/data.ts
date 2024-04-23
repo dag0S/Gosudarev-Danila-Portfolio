@@ -4,6 +4,7 @@ import { menuListProps, socialsListProps } from "../types/types";
 import { IconsID } from "../../components/Socials/IconsSVG";
 // Promo
 import hero from "../../assets/img/promo-hero.png";
+import tinyHero from "../../assets/img/tinyImg/promo-hero-tiny.png";
 import promoHTML from "../svg/promoHTML.svg";
 import promoJS from "../svg/promoJS.svg";
 import promoTS from "../svg/promoTS.svg";
@@ -105,6 +106,7 @@ export const promoData = {
   },
   hero: {
     img: hero,
+    tinyImg: tinyHero,
     alt: "Государев Данила",
   },
   icons: {
