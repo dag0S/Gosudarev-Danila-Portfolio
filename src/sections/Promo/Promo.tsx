@@ -21,7 +21,7 @@ const bottomToTopAnimation = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: custom * 0.3,
+      delay: custom * 0.3 + 0.5,
     },
   }),
 };
