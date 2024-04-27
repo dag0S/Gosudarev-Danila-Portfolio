@@ -333,7 +333,7 @@ export const worksPageData = {
       name: "ВяЖу",
       desc: "ВяЖу - это один из первых моих проектов, над которым я работал в команде на курсе по web-разработке. Сайт из себя представляет небольшой сборник статей и видео посвященных вязанию и шитью. Я работал над проектом «ВяЖу» в команде на курсе по веб-разработке. Это был один из моих первых проектов. Сайт представляет собой небольшой сборник статей и видео о вязании и шитье.",
       preview: previewVyazhu,
-      tinyPreview: tinyPreviewVoiceTagLab,
+      tinyPreview: tinyPreviewVyazhu,
       img: imgVyazhu,
       linkGitHub: "https://github.com/dag0S/vyazhu",
       linkDemo: "https://iw966675.sprint.1t.ru/index.php",
