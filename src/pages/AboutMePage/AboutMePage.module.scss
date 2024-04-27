@@ -29,6 +29,9 @@ img {
   position: relative;
   overflow: hidden;
 
+  display: flex;
+  min-height: 100vh;
+
   @media (max-width: 1200px) {
     img {
       max-height: 500px;
@@ -64,9 +67,11 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    width: 100%;
 
     @media (max-width: 768px) {
       flex-direction: column-reverse;
+      justify-content: center;
     }
   }
 
@@ -110,6 +115,9 @@ img {
   background: var(--secondary-bg);
   overflow: hidden;
 
+  display: flex;
+  min-height: 100vh;
+
   @media (max-width: 1400px) {
     img {
       max-height: 500px;
@@ -151,9 +159,11 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 
     @media (max-width: 768px) {
       flex-direction: column-reverse;
+      justify-content: center;
     }
   }
 }
@@ -162,6 +172,9 @@ img {
   padding: 64px 0 64px 0;
   position: relative;
   overflow: hidden;
+
+  display: flex;
+  min-height: 100vh;
 
   @media (max-width: 1400px) {
     img {
@@ -203,9 +216,11 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    width: 100%;
 
     @media (max-width: 768px) {
       flex-direction: column-reverse;
+      justify-content: center;
     }
   }
 
