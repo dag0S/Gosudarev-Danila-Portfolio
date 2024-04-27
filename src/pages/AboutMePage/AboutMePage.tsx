@@ -5,6 +5,7 @@ import Title from "../../components/Title/Title";
 import { aboutMePageData } from "../../assets/data/data";
 
 import styles from "./AboutMePage.module.scss";
+import { MProgressiveImage } from "../../components/ProgressiveImage/ProgressiveImage";
 
 const leftToRightAnimation = {
   hidden: {
@@ -58,8 +59,9 @@ const AboutMePage: FC = () => {
                 {aboutMePageData.aboutMe.text}
               </div>
             </motion.div>
-            <motion.img
+            <MProgressiveImage
               variants={rightToLeftAnimation}
+              placeholderSrc={aboutMePageData.aboutMe.img.tiny}
               src={aboutMePageData.aboutMe.img.path}
               alt={aboutMePageData.aboutMe.img.alt}
             />
@@ -81,8 +83,9 @@ const AboutMePage: FC = () => {
             >
               {aboutMePageData.studies.text}
             </motion.div>
-            <motion.img
+            <MProgressiveImage
               variants={leftToRightAnimation}
+              placeholderSrc={aboutMePageData.studies.img.tiny}
               src={aboutMePageData.studies.img.path}
               alt={aboutMePageData.studies.img.alt}
             />
@@ -103,8 +106,9 @@ const AboutMePage: FC = () => {
             >
               {aboutMePageData.frontend.text}
             </motion.div>
-            <motion.img
+            <MProgressiveImage
               variants={rightToLeftAnimation}
+              placeholderSrc={aboutMePageData.frontend.img.tiny}
               src={aboutMePageData.frontend.img.path}
               alt={aboutMePageData.frontend.img.alt}
             />

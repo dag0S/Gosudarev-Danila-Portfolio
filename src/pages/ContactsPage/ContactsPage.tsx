@@ -5,19 +5,22 @@ import Socials from "../../components/Socials/Socials";
 import cn from "classnames";
 
 import styles from "./ContactsPage.module.scss";
+import ProgressiveImage from "../../components/ProgressiveImage/ProgressiveImage";
 
 const ContactsPage: FC = () => {
   return (
     <section className={styles["contacts"]}>
       <div className="container">
         <div className={styles["contacts__inner"]}>
-          <Title className={styles['contacts__title']}>{contactsPageData.title}</Title>
+          <Title className={styles["contacts__title"]}>
+            {contactsPageData.title}
+          </Title>
           <div className={styles["contacts__wrap"]}>
             <div className={styles["contacts__left"]}>
               <ul className={styles["contacts__list"]}>
                 <li>
                   <a
-                    className={cn(styles['icon'], styles["icon--mail"])}
+                    className={cn(styles["icon"], styles["icon--mail"])}
                     href={`mailto:${contactsPageData.email}`}
                   >
                     {contactsPageData.email}
@@ -25,7 +28,7 @@ const ContactsPage: FC = () => {
                 </li>
                 <li>
                   <a
-                    className={cn(styles['icon'], styles["icon--phone"])}
+                    className={cn(styles["icon"], styles["icon--phone"])}
                     href={`tel:${contactsPageData.tel1.forLink}`}
                   >
                     {contactsPageData.tel1.tel}
@@ -33,7 +36,7 @@ const ContactsPage: FC = () => {
                 </li>
                 <li>
                   <a
-                    className={cn(styles['icon'], styles["icon--phone"])}
+                    className={cn(styles["icon"], styles["icon--phone"])}
                     href={`tel:${contactsPageData.tel2.forLink}`}
                   >
                     {contactsPageData.tel2.tel}
@@ -42,7 +45,12 @@ const ContactsPage: FC = () => {
               </ul>
               <Socials />
             </div>
-            <img className={styles["contacts__img"]} src={contactsPageData.img} alt="Контакты" />
+            <ProgressiveImage
+              className={styles["contacts__img"]}
+              placeholderSrc={contactsPageData.img.tiny}
+              src={contactsPageData.img.src}
+              alt={contactsPageData.img.alt}
+            />
           </div>
         </div>
       </div>

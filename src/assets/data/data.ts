@@ -22,26 +22,38 @@ import imgDMLeasing from "../img/DMLeasing/DMLeasing-img.png";
 import imgVyazhu from "../img/Vyazhu/Vyazhu-img.png";
 import imgGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-img.png";
 // Works
-import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.png";
-import previewHotPizza from "../img/HotPizza/HotPizza-preview.png";
-import previewLamborghini from "../img/Lamborghini/Lamborghini-preview.png";
-import previewOculus from "../img/Oculus/Oculus-preview.png";
-import previewHooBank from "../img/HooBank/HooBank-preview.png";
-import previewLoftHouse from "../img/LoftHouse/LoftHouse-preview.png";
-import previewDMLeasing from "../img/DMLeasing/DMLeasing-preview.png";
-import previewVyazhu from "../img/Vyazhu/Vyazhu-preview.png";
-import previewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview.png";
-
+import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.jpg";
+import tinyPreviewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview-min.jpg";
+import previewHotPizza from "../img/HotPizza/HotPizza-preview.jpg";
+import tinyPreviewHotPizza from "../img/HotPizza/HotPizza-preview-min.jpg";
+import previewLamborghini from "../img/Lamborghini/Lamborghini-preview.jpg";
+import tinyPreviewLamborghini from "../img/Lamborghini/Lamborghini-preview-min.jpg";
+import previewOculus from "../img/Oculus/Oculus-preview.jpg";
+import tinyPreviewOculus from "../img/Oculus/Oculus-preview-min.jpg";
+import previewHooBank from "../img/HooBank/HooBank-preview.jpg";
+import tinyPreviewHooBank from "../img/HooBank/HooBank-preview-min.jpg";
+import previewLoftHouse from "../img/LoftHouse/LoftHouse-preview.jpg";
+import tinyPreviewLoftHouse from "../img/LoftHouse/LoftHouse-preview-min.jpg";
+import previewDMLeasing from "../img/DMLeasing/DMLeasing-preview.jpg";
+import tinyPreviewDMLeasing from "../img/DMLeasing/DMLeasing-preview-min.jpg";
+import previewVyazhu from "../img/Vyazhu/Vyazhu-preview.jpg";
+import tinyPreviewVyazhu from "../img/Vyazhu/Vyazhu-preview-min.jpg";
+import previewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview.jpg";
+import tinyPreviewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview-min.jpg";
 // Work
 import arrowLeft from "../svg/arrow-left.svg";
 import btnDemo from "../svg/btn-demo.svg";
 import btnGitHub from "../svg/btn-git-hub.svg";
 // ContactsPage
-import contactsImg from "../img/contacts-img.png";
+import contactsImg from "../img/contacts-img.jpg";
+import tinyContactsImg from "../../assets/img/tinyImg/contacts-img-tiny.jpg";
 // aboutMePageData
 import heroAboutMe from "../img/hero-about-me.png";
-import rosnou from "../img/rosnou.png";
-import frontend from "../img/frontend.png";
+import tinyHeroAboutMe from "../../assets/img/tinyImg/hero-about-me-tiny.png";
+import rosnou from "../img/rosnou.jpg";
+import tinyRosnou from "../../assets/img/tinyImg/rosnou-tiny.jpg";
+import frontend from "../img/frontend.jpg";
+import tinyFrontend from "../../assets/img/tinyImg/frontend-tiny.jpg";
 // Эл-ты тех. скилла
 import { listTechs } from "./listTechs";
 
@@ -213,6 +225,7 @@ export const worksPageData = {
       name: "Voice Tag Lab",
       desc: "Проект Voice Tag Lab - это незаменимая вещь для каждого битмейкера, с возможностью выбрать любой из ихголосов, и выделиться.",
       preview: previewVoiceTagLab,
+      tinyPreview: tinyPreviewVoiceTagLab,
       img: imgVoiceTagLab,
       linkGitHub: "https://github.com/dag0S/voice-tag-lab",
       linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
@@ -230,6 +243,7 @@ export const worksPageData = {
       name: "Lamborghini",
       desc: "Итальянская компания, производитель спортивных автомобилей под маркой Lamborghini. Данный лендинг информирует о гранд-финале гонок.",
       preview: previewLamborghini,
+      tinyPreview: tinyPreviewLamborghini,
       img: imgLamborghini,
       linkGitHub: "https://github.com/dag0S/Lamborghini",
       linkDemo: "https://lamborghini-demo.netlify.app/",
@@ -247,6 +261,7 @@ export const worksPageData = {
       name: "Oculus",
       desc: "Oculus - это очки виртуальной реальности будущего. Данный страница рекламирует данный продукт.",
       preview: previewOculus,
+      tinyPreview: tinyPreviewOculus,
       img: imgOculus,
       linkGitHub: "https://github.com/dag0S/Oculus",
       linkDemo: "https://oculus-demo-1-0-1.netlify.app/",
@@ -264,6 +279,7 @@ export const worksPageData = {
       name: "HooBank",
       desc: "HooBank – инновационный банк. На этом лендинге мы рассказываем о возможностях и фичах этого банка. Сайт создан с использованием React и библиотеки стилей Tailwind.",
       preview: previewHooBank,
+      tinyPreview: tinyPreviewHooBank,
       img: imgHooBank,
       linkGitHub: "https://github.com/dag0S/HooBank",
       linkDemo: "https://genuine-griffin-680248.netlify.app",
@@ -281,6 +297,7 @@ export const worksPageData = {
       name: "LoftHouse",
       desc: "LoftHouse – это жилой комплекс, расположенный в историческом центре города. Данный одностраничный сайт призван познакомить вас со всеми преимуществами этого места.",
       preview: previewLoftHouse,
+      tinyPreview: tinyPreviewLoftHouse,
       img: imgLoftHouse,
       linkGitHub: "https://github.com/dag0S/loft-house",
       linkDemo: "https://loft-house-demo.netlify.app/",
@@ -298,6 +315,7 @@ export const worksPageData = {
       name: "D&M Leasing",
       desc: "D&M Leasing – сайт по приобретению автомобилей, который состоит из нескольких страниц, написанных на чистом HTML и CSS.",
       preview: previewDMLeasing,
+      tinyPreview: tinyPreviewDMLeasing,
       img: imgDMLeasing,
       linkGitHub: "https://github.com/dag0S/Cars",
       linkDemo: "https://cars-demo-1-0-1.netlify.app/",
@@ -315,6 +333,7 @@ export const worksPageData = {
       name: "ВяЖу",
       desc: "ВяЖу - это один из первых моих проектов, над которым я работал в команде на курсе по web-разработке. Сайт из себя представляет небольшой сборник статей и видео посвященных вязанию и шитью. Я работал над проектом «ВяЖу» в команде на курсе по веб-разработке. Это был один из моих первых проектов. Сайт представляет собой небольшой сборник статей и видео о вязании и шитье.",
       preview: previewVyazhu,
+      tinyPreview: tinyPreviewVoiceTagLab,
       img: imgVyazhu,
       linkGitHub: "https://github.com/dag0S/vyazhu",
       linkDemo: "https://iw966675.sprint.1t.ru/index.php",
@@ -332,6 +351,7 @@ export const worksPageData = {
       name: "Hot Pizza",
       desc: "HotPizza – это проект, на котором я имел возможность усовершенствовать свои навыки работы с react и redux toolkit. Он представляет собой онлайн-магазин пиццы.",
       preview: previewHotPizza,
+      tinyPreview: tinyPreviewHotPizza,
       img: imgHotPizza,
       linkGitHub: "https://github.com/dag0S/hot-pizza-spa-app",
       linkDemo: "https://pizza-hot-spa.netlify.app/",
@@ -350,6 +370,7 @@ export const worksPageData = {
       name: "Gosudarev Danila",
       desc: "Gosudarev Danila – это мой сайт-портфолио, который вы сейчас видите. Я создал его с нуля, начиная с дизайна и заканчивая настройкой и развертыванием.",
       preview: previewGosudarevDanila,
+      tinyPreview: tinyPreviewGosudarevDanila,
       img: imgGosudarevDanila,
       linkGitHub: "https://github.com/dag0S/Gosudarev-Danila-Portfolio",
       linkDemo: "https://gosudarev-danila.netlify.app/",
@@ -394,7 +415,11 @@ export const contactsPageData = {
     tel: "+7 (993) 362-01-05",
     forLink: "+79933620105",
   },
-  img: contactsImg,
+  img: {
+    src: contactsImg,
+    tiny: tinyContactsImg,
+    alt: "Контакты",
+  },
 };
 
 export const aboutMePageData = {
@@ -404,6 +429,7 @@ export const aboutMePageData = {
     img: {
       path: heroAboutMe,
       alt: "Госудаерв Данила",
+      tiny: tinyHeroAboutMe,
     },
   },
   studies: {
@@ -411,6 +437,7 @@ export const aboutMePageData = {
     img: {
       path: rosnou,
       alt: "РосНОУ",
+      tiny: tinyRosnou,
     },
   },
   frontend: {
@@ -418,6 +445,7 @@ export const aboutMePageData = {
     img: {
       path: frontend,
       alt: "frontend",
+      tiny: tinyFrontend,
     },
   },
 };

@@ -1,14 +1,13 @@
-import { FC, useEffect, useState } from "react";
+import { FC, forwardRef, useEffect, useState } from "react";
 import { ProgressiveImageProps } from "./ProgressiveImageProps";
+import { motion } from "framer-motion";
 
 import styles from "./ProgressiveImage.module.scss";
 
-const ProgressiveImage: FC<ProgressiveImageProps> = ({
-  src,
-  placeholderSrc,
-  alt = "",
-  className = "",
-}) => {
+const ProgressiveImage: FC<ProgressiveImageProps> = forwardRef<
+  HTMLImageElement,
+  ProgressiveImageProps
+>(({ src, placeholderSrc, alt = "", className = "" }, ref) => {
   const [imageSrc, setImageSrc] = useState(placeholderSrc);
 
   const cn = `${className} ${
@@ -23,7 +22,10 @@ const ProgressiveImage: FC<ProgressiveImageProps> = ({
     };
   }, [src]);
 
-  return <img className={cn} src={imageSrc} alt={alt} />;
-};
+  return (
+    <img ref={ref} loading="lazy" className={cn} src={imageSrc} alt={alt} />
+  );
+});
 
+export const MProgressiveImage = motion(ProgressiveImage);
 export default ProgressiveImage;

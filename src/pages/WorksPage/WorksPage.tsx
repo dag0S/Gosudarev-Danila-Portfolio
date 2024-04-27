@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../../redux/store";
 
 import styles from "./WorksPage.module.scss";
+import ProgressiveImage from "../../components/ProgressiveImage/ProgressiveImage";
 
 const WorksPage: FC = () => {
   const category = useSelector((state: RootState) => state.works.categories);
@@ -29,9 +30,10 @@ const WorksPage: FC = () => {
                   key={work.id}
                 >
                   <div className={styles["work__img-wrap"]}>
-                    <div
+                    <ProgressiveImage
                       className={styles["work__img"]}
-                      style={{ backgroundImage: `url(${work.preview})` }}
+                      src={work.preview}
+                      placeholderSrc={work.tinyPreview}
                     />
                   </div>
                   <h5 className={styles["work__title"]}>{work.name}</h5>
