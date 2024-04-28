@@ -9,9 +9,9 @@ import {
 import { promoData } from "../../assets/data/data";
 import Button from "../../components/Button/Button";
 import Socials from "../../components/Socials/Socials";
+import ProgressiveImage from "../../components/ProgressiveImage/ProgressiveImage";
 
 import styles from "./Promo.module.scss";
-import ProgressiveImage from "../../components/ProgressiveImage/ProgressiveImage";
 
 const bottomToTopAnimation = {
   hidden: {
