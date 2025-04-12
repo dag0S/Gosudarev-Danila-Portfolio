@@ -127,6 +127,22 @@
     }
   }
 
+  &__in-process {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 24px;
+    color: var(--accent);
+
+    @media (max-width: 1400px) {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
   &__btn-demo {
     display: inline-block;
     font-weight: 700;

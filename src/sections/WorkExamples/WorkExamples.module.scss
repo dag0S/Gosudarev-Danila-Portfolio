@@ -60,6 +60,7 @@
 .slide {
   display: flex;
   justify-content: space-between;
+  min-height: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -89,19 +90,24 @@
   }
 
   &__wrap-text {
-    padding: 60px 45px;
+    padding: 40px 30px;
     background: var(--secondary-bg);
     border-radius: 20px;
     align-self: center;
     text-align: center;
     max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 
     @media (max-width: 1200px) {
-      padding: 30px;
+      padding: 20px;
     }
 
     @media (max-width: 1024px) {
-      padding: 20px;
+      padding: 10px;
     }
 
     @media (max-width: 768px) {
@@ -112,15 +118,12 @@
   &__title {
     font-weight: 700;
     font-size: 64px;
-    margin-bottom: 36px;
 
     @media (max-width: 1200px) {
-      margin-bottom: 30px;
       font-size: 40px;
     }
 
     @media (max-width: 1024px) {
-      margin-bottom: 20px;
       font-size: 30px;
     }
 
@@ -131,20 +134,13 @@
 
   &__desc {
     font-size: 24px;
-    margin-bottom: 72px;
 
     @media (max-width: 1200px) {
-      margin-bottom: 30px;
       font-size: 22px;
     }
 
     @media (max-width: 1024px) {
-      margin-bottom: 20px;
       font-size: 20px;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 16px;
     }
   }
 }

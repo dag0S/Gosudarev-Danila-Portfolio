@@ -29,17 +29,17 @@ const ContactsPage: FC = () => {
                 <li>
                   <a
                     className={cn(styles["icon"], styles["icon--phone"])}
-                    href={`tel:${contactsPageData.tel1.forLink}`}
+                    href={`tel:${contactsPageData.tel2.forLink}`}
                   >
-                    {contactsPageData.tel1.tel}
+                    {contactsPageData.tel2.tel}
                   </a>
                 </li>
                 <li>
                   <a
                     className={cn(styles["icon"], styles["icon--phone"])}
-                    href={`tel:${contactsPageData.tel2.forLink}`}
+                    href={`tel:${contactsPageData.tel1.forLink}`}
                   >
-                    {contactsPageData.tel2.tel}
+                    {contactsPageData.tel1.tel}
                   </a>
                 </li>
               </ul>

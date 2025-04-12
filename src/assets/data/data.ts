@@ -21,6 +21,10 @@ import imgLoftHouse from "../img/LoftHouse/LoftHouse-img.png";
 import imgDMLeasing from "../img/DMLeasing/DMLeasing-img.png";
 import imgVyazhu from "../img/Vyazhu/Vyazhu-img.png";
 import imgGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-img.png";
+import imgLibSpace from "../img/LibSpace/LibSpace-img.png";
+import imgAuction from "../img/Auction/Auction-img.png";
+import imgNextPizza from "../img/NextPizza/NextPizza-img.png";
+import imgTechWave from "../img/TechWave/TechWave-img.png";
 // Works
 import previewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview.jpg";
 import tinyPreviewVoiceTagLab from "../img/VoiceTagLab/VoiceTagLab-preview-min.jpg";
@@ -40,6 +44,10 @@ import previewVyazhu from "../img/Vyazhu/Vyazhu-preview.jpg";
 import tinyPreviewVyazhu from "../img/Vyazhu/Vyazhu-preview-min.jpg";
 import previewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview.jpg";
 import tinyPreviewGosudarevDanila from "../img/GosudarevDanila/GosudarevDanila-preview-min.jpg";
+import previewLibSpace from "../img/LibSpace/LibSpace-preview.jpg";
+import previewAuction from "../img/Auction/Auction-preview.jpg";
+import previewNextPizza from "../img/NextPizza/NextPizza-preview.jpg";
+import previewTechWave from "../img/TechWave/TechWave-preview.jpg";
 // Work
 import arrowLeft from "../svg/arrow-left.svg";
 import btnDemo from "../svg/btn-demo.svg";
@@ -102,7 +110,7 @@ export const socialsList: socialsListProps[] = [
   {
     id: 3,
     iconId: IconsID.WHATS_APP,
-    url: "https://wa.me/+79166819817",
+    url: "https://wa.me/+79933620105",
   },
 ];
 
@@ -152,7 +160,7 @@ export const promoData = {
 // Содержимое секции AboutMe
 export const aboutMeData = {
   title: "<Обо мне />",
-  text: "Меня зовут Данила, я Frontend разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React.",
+  text: "Меня зовут Данила, я Frontend разработчик. В разработке 2.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React, NextJS и ExpressJS.",
   btn: {
     text: "подробнее",
     path: "/about-me",
@@ -176,26 +184,38 @@ export const techStackData = {
       id: 1,
       title: "Frontend",
       icons: [
+        listTechs.nextJs,
         listTechs.react,
         listTechs.redux,
         listTechs.router,
-        listTechs.javascript,
+        listTechs.tailwind,
         listTechs.typescript,
+        listTechs.javascript,
         listTechs.html,
         listTechs.css,
         listTechs.sass,
+        listTechs.jest,
+        listTechs.storybook,
+        listTechs.figma,
+        listTechs.photoshop,
       ],
     },
     {
       id: 2,
-      title: "Graphics editor",
-      icons: [listTechs.figma, listTechs.photoshop],
+      title: "Backend",
+      icons: [
+        listTechs.nodeJs,
+        listTechs.expressJs,
+        listTechs.prisma,
+        listTechs.postgresql,
+      ],
     },
     {
       id: 3,
       title: "Other",
       icons: [
         listTechs.npm,
+        listTechs.webpack,
         listTechs.gulp,
         listTechs.git,
         listTechs.gitHub,
@@ -216,18 +236,18 @@ export const newsletterData = {
 // Содержимое страницы Works
 export const worksPageData = {
   title: "<Портфолио />",
-  categories: ["верстка", "web-app"],
+  categories: ["Web-app","Верстка"],
   btnText: "подробнее",
   works: [
     {
       id: 1,
-      category: 0,
+      category: 1,
       name: "Voice Tag Lab",
       desc: "Проект Voice Tag Lab - это незаменимая вещь для каждого битмейкера, с возможностью выбрать любой из ихголосов, и выделиться.",
       preview: previewVoiceTagLab,
       tinyPreview: tinyPreviewVoiceTagLab,
       img: imgVoiceTagLab,
-      linkGitHub: "https://github.com/dag0S/voice-tag-lab",
+      linkFrontendGitHub: "https://github.com/dag0S/voice-tag-lab",
       linkDemo: "https://warm-seahorse-f0148f.netlify.app/",
       stack: [
         listTechs.html,
@@ -239,13 +259,13 @@ export const worksPageData = {
     },
     {
       id: 3,
-      category: 0,
+      category: 1,
       name: "Lamborghini",
       desc: "Итальянская компания, производитель спортивных автомобилей под маркой Lamborghini. Данный лендинг информирует о гранд-финале гонок.",
       preview: previewLamborghini,
       tinyPreview: tinyPreviewLamborghini,
       img: imgLamborghini,
-      linkGitHub: "https://github.com/dag0S/Lamborghini",
+      linkFrontendGitHub: "https://github.com/dag0S/Lamborghini",
       linkDemo: "https://lamborghini-demo.netlify.app/",
       stack: [
         listTechs.html,
@@ -257,13 +277,13 @@ export const worksPageData = {
     },
     {
       id: 2,
-      category: 0,
+      category: 1,
       name: "Oculus",
       desc: "Oculus - это очки виртуальной реальности будущего. Данный страница рекламирует данный продукт.",
       preview: previewOculus,
       tinyPreview: tinyPreviewOculus,
       img: imgOculus,
-      linkGitHub: "https://github.com/dag0S/Oculus",
+      linkFrontendGitHub: "https://github.com/dag0S/Oculus",
       linkDemo: "https://oculus-demo-1-0-1.netlify.app/",
       stack: [
         listTechs.html,
@@ -275,13 +295,13 @@ export const worksPageData = {
     },
     {
       id: 4,
-      category: 0,
+      category: 1,
       name: "HooBank",
       desc: "HooBank – инновационный банк. На этом лендинге мы рассказываем о возможностях и фичах этого банка. Сайт создан с использованием React и библиотеки стилей Tailwind.",
       preview: previewHooBank,
       tinyPreview: tinyPreviewHooBank,
       img: imgHooBank,
-      linkGitHub: "https://github.com/dag0S/HooBank",
+      linkFrontendGitHub: "https://github.com/dag0S/HooBank",
       linkDemo: "https://genuine-griffin-680248.netlify.app",
       stack: [
         listTechs.react,
@@ -293,13 +313,13 @@ export const worksPageData = {
     },
     {
       id: 5,
-      category: 0,
+      category: 1,
       name: "LoftHouse",
       desc: "LoftHouse – это жилой комплекс, расположенный в историческом центре города. Данный одностраничный сайт призван познакомить вас со всеми преимуществами этого места.",
       preview: previewLoftHouse,
       tinyPreview: tinyPreviewLoftHouse,
       img: imgLoftHouse,
-      linkGitHub: "https://github.com/dag0S/loft-house",
+      linkFrontendGitHub: "https://github.com/dag0S/loft-house",
       linkDemo: "https://loft-house-demo.netlify.app/",
       stack: [
         listTechs.html,
@@ -311,13 +331,13 @@ export const worksPageData = {
     },
     {
       id: 6,
-      category: 0,
+      category: 1,
       name: "D&M Leasing",
       desc: "D&M Leasing – сайт по приобретению автомобилей, который состоит из нескольких страниц, написанных на чистом HTML и CSS.",
       preview: previewDMLeasing,
       tinyPreview: tinyPreviewDMLeasing,
       img: imgDMLeasing,
-      linkGitHub: "https://github.com/dag0S/Cars",
+      linkFrontendGitHub: "https://github.com/dag0S/Cars",
       linkDemo: "https://cars-demo-1-0-1.netlify.app/",
       stack: [
         listTechs.html,
@@ -329,13 +349,13 @@ export const worksPageData = {
     },
     {
       id: 7,
-      category: 0,
+      category: 1,
       name: "ВяЖу",
       desc: "ВяЖу - это один из первых моих проектов, над которым я работал в команде на курсе по web-разработке. Сайт из себя представляет небольшой сборник статей и видео посвященных вязанию и шитью. Я работал над проектом «ВяЖу» в команде на курсе по веб-разработке. Это был один из моих первых проектов. Сайт представляет собой небольшой сборник статей и видео о вязании и шитье.",
       preview: previewVyazhu,
       tinyPreview: tinyPreviewVyazhu,
       img: imgVyazhu,
-      linkGitHub: "https://github.com/dag0S/vyazhu",
+      linkFrontendGitHub: "https://github.com/dag0S/vyazhu",
       linkDemo: "https://iw966675.sprint.1t.ru/index.php",
       stack: [
         listTechs.html,
@@ -347,14 +367,93 @@ export const worksPageData = {
     },
     {
       id: 8,
-      category: 1,
-      name: "Hot Pizza",
-      desc: "HotPizza – это проект, на котором я имел возможность усовершенствовать свои навыки работы с react и redux toolkit. Он представляет собой онлайн-магазин пиццы.",
-      preview: previewHotPizza,
+      category: 0,
+      name: "Lib Space",
+      desc: "Lib Space — это моя курсовая работа, которую я пишу на третьем курсе. В ней я реализую модель ААА (Авторизация, Аутентификация, Учёт) с помощью ExpressJS, JWT токенов и Cookies. В проекте также задействованы NextJS, Tailwind, shandcn и множество других библиотек. Реализован dashboard для ролей пользователя админ и библиотекарь, в котором можно добавлять, изменять и удалять данные (пользователи, книги, жанры и т. д.)",
+      preview: previewLibSpace,
       tinyPreview: tinyPreviewHotPizza,
-      img: imgHotPizza,
-      linkGitHub: "https://github.com/dag0S/hot-pizza-spa-app",
-      linkDemo: "https://pizza-hot-spa.netlify.app/",
+      img: imgLibSpace,
+      linkFrontendGitHub: "https://github.com/dag0S/libspace_frontend",
+      linkBackendGitHub: "https://github.com/dag0S/libspace_backend",
+      stack: [
+        listTechs.nextJs,
+        listTechs.react,
+        listTechs.redux,
+        listTechs.tailwind,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.expressJs,
+        listTechs.prisma,
+      ],
+    },
+    {
+      id: 9,
+      category: 0,
+      name: "Auction for streamers",
+      desc: "Этот сайт предназначен для взаимодействия между стримером и его аудиторией, позволяя им совместно принимать решения во время стрима. Будь то выбор фильма, сериала или игры для развлечения. Он разработан с использованиемследующих технологий: React, Redux Toolkit, NextJS, Typescript, React Hook Form и Framer Motion.",
+      preview: previewAuction,
+      tinyPreview: tinyPreviewHotPizza,
+      img: imgAuction,
+      linkFrontendGitHub: "https://github.com/dag0S/auction-for-streamers",
+      linkDemo: "https://auction-for-streamers.netlify.app",
+      stack: [
+        listTechs.nextJs,
+        listTechs.react,
+        listTechs.redux,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.tailwind,
+      ],
+    },
+    {
+      id: 10,
+      category: 0,
+      name: "Next Pizza",
+      desc: "Next Pizza — это обновлённая версия старого проекта Hot Pizza, построенная на основе современного фреймворка NextJS, который предоставляет полный набор инструментов для создания веб-приложений.",
+      preview: previewNextPizza,
+      tinyPreview: tinyPreviewHotPizza,
+      img: imgNextPizza,
+      linkFrontendGitHub: "https://github.com/dag0S/next-pizza",
+      linkDemo: "https://next-pizza-six-sepia.vercel.app/",
+      stack: [
+        listTechs.nextJs,
+        listTechs.react,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.tailwind,
+        listTechs.prisma,
+      ],
+    },
+    {
+      id: 11,
+      category: 0,
+      name: "Tech Wave",
+      desc: "Tech Wave — это интернет-магазин электротехники, созданный на основе технологии React. Чтобы совершать покупки, нужно быть авторизованным пользователем.",
+      preview: previewTechWave,
+      tinyPreview: tinyPreviewHotPizza,
+      img: imgTechWave,
+      linkFrontendGitHub: "https://github.com/dag0S/tech_wave_frontend",
+      linkBackendGitHub: "https://github.com/dag0S/tech_wave_backend",
+      linkDemo: "https://tech-wave-gosudarev.netlify.app/",
+      stack: [
+        listTechs.react,
+        listTechs.redux,
+        listTechs.typescript,
+        listTechs.javascript,
+        listTechs.expressJs,
+        listTechs.prisma,
+      ],
+    },
+    {
+      id: 12,
+      category: 0,
+      name: "Gosudarev Danila",
+      desc: "Gosudarev Danila – это мой сайт-портфолио, который вы сейчас видите. Я создал его с нуля, начиная с дизайна и заканчивая настройкой и развертыванием.",
+      preview: previewGosudarevDanila,
+      tinyPreview: tinyPreviewGosudarevDanila,
+      img: imgGosudarevDanila,
+      linkFrontendGitHub: "https://github.com/dag0S/Gosudarev-Danila-Portfolio",
+      linkDemo: "https://gosudarev-danila.netlify.app/",
       stack: [
         listTechs.react,
         listTechs.redux,
@@ -365,15 +464,15 @@ export const worksPageData = {
       ],
     },
     {
-      id: 9,
-      category: 1,
-      name: "Gosudarev Danila",
-      desc: "Gosudarev Danila – это мой сайт-портфолио, который вы сейчас видите. Я создал его с нуля, начиная с дизайна и заканчивая настройкой и развертыванием.",
-      preview: previewGosudarevDanila,
-      tinyPreview: tinyPreviewGosudarevDanila,
-      img: imgGosudarevDanila,
-      linkGitHub: "https://github.com/dag0S/Gosudarev-Danila-Portfolio",
-      linkDemo: "https://gosudarev-danila.netlify.app/",
+      id: 13,
+      category: 0,
+      name: "Hot Pizza",
+      desc: "HotPizza – это проект, на котором я имел возможность усовершенствовать свои навыки работы с react и redux toolkit. Он представляет собой онлайн-магазин пиццы.",
+      preview: previewHotPizza,
+      tinyPreview: tinyPreviewHotPizza,
+      img: imgHotPizza,
+      linkFrontendGitHub: "https://github.com/dag0S/hot-pizza-spa-app",
+      linkDemo: "https://pizza-hot-spa.netlify.app/",
       stack: [
         listTechs.react,
         listTechs.redux,
@@ -394,11 +493,15 @@ export const workPageData = {
     url: "/works",
   },
   btnDemo: {
-    text: "смотреть демо",
+    text: "Смотреть демо",
     icon: btnDemo,
   },
-  btnGitHub: {
-    text: "смотреть код",
+  btnFrontendGitHub: {
+    text: "Frontend код",
+    icon: btnGitHub,
+  },
+  btnBackendGitHub: {
+    text: "Backend код",
     icon: btnGitHub,
   },
   sybTitle: "Инструменты",
@@ -406,7 +509,7 @@ export const workPageData = {
 
 export const contactsPageData = {
   title: "<Контакты />",
-  email: "danidagosudarev@gmail.com",
+  email: "danilagosudarev2004@yandex.ru",
   tel1: {
     tel: "+7 (916) 681-98-17",
     forLink: "+79166819817",
@@ -425,7 +528,7 @@ export const contactsPageData = {
 export const aboutMePageData = {
   aboutMe: {
     title: "<Обо мне />",
-    text: "Привет, меня зовут Данила, я Frontend разработчик. В разработке 1.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React. Мне 19 лет, живу в Котельника, учусь в Москве.",
+    text: "Привет, меня зовут Данила, я Frontend разработчик. В разработке 2.5 года. Я верстаю сайты по макету Figma и создаю web-приложения с помощью React. Мне 20 лет, живу в Котельника, учусь в Москве.",
     img: {
       path: heroAboutMe,
       alt: "Госудаерв Данила",
@@ -433,7 +536,7 @@ export const aboutMePageData = {
     },
   },
   studies: {
-    text: 'Я студент 2 курса РосНОУ (Российский Новый Университет). Учусь на направлении 09.03.01 Информатика и вычислительная техника, по специальности Безопасность информационных систем и вычислительной техники. Защитил курсовой проект на тему "Игра Arkanoid на C++".',
+    text: 'Я студент 3 курса РосНОУ (Российский Новый Университет). Учусь на направлении 09.03.01 Информатика и вычислительная техника, по специальности Безопасность информационных систем и вычислительной техники. Защитил курсовой проект на тему "Игра Arkanoid на C++".',
     img: {
       path: rosnou,
       alt: "РосНОУ",
@@ -441,7 +544,7 @@ export const aboutMePageData = {
     },
   },
   frontend: {
-    text: 'В начале первого курса в 2022 году начал изучать верстку (HTML, CSS, SCSS) по видео с YouTube, в ноябре того же года поступил на курс WEB-разработчик онлайн школы 1T Sprint, в которой получил диплом о профессиональной переподготовке, защитив командный проект "ВяЖу". После верстки нескольких лендингов, прошел курс по JavaScript, сделав несколько проектов на чистом JS. В сентябре 2023 начал изучать React и его библиотеки по курсам. Изучив основы React, приступил к изучению TypeScript и основам nodeJS.',
+    text: 'В начале первого курса в 2022 году начал изучать верстку (HTML, CSS, SCSS) по видео с YouTube, в ноябре того же года поступил на курс WEB-разработчик онлайн школы 1T Sprint, в которой получил диплом о профессиональной переподготовке, защитив командный проект "ВяЖу". После верстки нескольких лендингов, прошел курс по JavaScript, сделав несколько проектов на чистом JS. В сентябре 2023 начал изучать React и его библиотеки по курсам. Изучив основы React, приступил к изучению TypeScript и основам ExpresJS. В настоящий момент изучаю NextJS',
     img: {
       path: frontend,
       alt: "frontend",

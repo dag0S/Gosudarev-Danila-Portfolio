@@ -35,22 +35,36 @@ const WorkPage: FC = () => {
               <Title className={styles["work__title"]}>{work?.name}</Title>
               <p className={styles["work__desc"]}>{work?.desc}</p>
               <div className={styles["work__wrap-btn"]}>
-                <a
-                  className={styles["work__btn-demo"]}
-                  href={work?.linkDemo}
-                  target="_blank"
-                >
-                  {workPageData.btnDemo.text}
-                  <img src={workPageData.btnDemo.icon} />
-                </a>
+                {work?.linkDemo ? (
+                  <a
+                    className={styles["work__btn-demo"]}
+                    href={work?.linkDemo}
+                    target="_blank"
+                  >
+                    {workPageData.btnDemo.text}
+                    <img src={workPageData.btnDemo.icon} />
+                  </a>
+                ) : (
+                  <div className={styles["work__in-process"]}>В разработке</div>
+                )}
                 <a
                   className={styles["work__btn-github"]}
-                  href={work?.linkGitHub}
+                  href={work?.linkFrontendGitHub}
                   target="_blank"
                 >
-                  {workPageData.btnGitHub.text}
-                  <img src={workPageData.btnGitHub.icon} />
+                  {workPageData.btnFrontendGitHub.text}
+                  <img src={workPageData.btnFrontendGitHub.icon} />
                 </a>
+                {work?.linkBackendGitHub ? (
+                  <a
+                    className={styles["work__btn-github"]}
+                    href={work?.linkBackendGitHub}
+                    target="_blank"
+                  >
+                    {workPageData.btnBackendGitHub.text}
+                    <img src={workPageData.btnBackendGitHub.icon} />
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

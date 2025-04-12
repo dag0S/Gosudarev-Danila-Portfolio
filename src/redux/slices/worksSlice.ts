@@ -14,10 +14,6 @@ export const worksSlice = createSlice({
   reducers: {
     categoriesChange: (state, action) => {
       state.categories = action.payload;
-
-      // if (state.categories === CATEGORIES.layouts)
-      //   state.categories = CATEGORIES.webApps;
-      // else state.categories = CATEGORIES.layouts;
     },
   },
 });

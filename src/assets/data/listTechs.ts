@@ -15,6 +15,15 @@ import git from "../svg/icons-tech/git.svg";
 import github from "../svg/icons-tech/github.svg";
 import vite from "../svg/icons-tech/vite.png";
 import php from "../svg/icons-tech/php.svg";
+import nextJs from "../svg/icons-tech/nextjs.svg";
+import tailwind from "../svg/icons-tech/tailwind.svg";
+import expressJs from "../svg/icons-tech/expressjs.svg";
+import prisma from "../svg/icons-tech/prisma.svg";
+import postgresql from "../svg/icons-tech/postgresql.svg";
+import nodeJs from "../svg/icons-tech/nodejs.svg";
+import webpack from "../svg/icons-tech/webpack.svg";
+import jest from "../svg/icons-tech/jest.svg";
+import storybook from "../svg/icons-tech/storybook.svg";
 
 export const listTechs = {
   react: {
@@ -96,5 +105,50 @@ export const listTechs = {
     id: 16,
     icon: php,
     name: "php",
+  },
+  nextJs: {
+    id: 17,
+    icon: nextJs,
+    name: "NextJS",
+  },
+  tailwind: {
+    id: 18,
+    icon: tailwind,
+    name: "Tailwind",
+  },
+  expressJs: {
+    id: 19,
+    icon: expressJs,
+    name: "ExpressJS",
+  },
+  prisma: {
+    id: 20,
+    icon: prisma,
+    name: "Prisma",
+  },
+  postgresql: {
+    id: 21,
+    icon: postgresql,
+    name: "PostgreSQL",
+  },
+  nodeJs: {
+    id: 22,
+    icon: nodeJs,
+    name: "NodeJS",
+  },
+  webpack: {
+    id: 23,
+    icon: webpack,
+    name: "Webpack",
+  },
+  jest: {
+    id: 24,
+    icon: jest,
+    name: "Jest",
+  },
+  storybook: {
+    id: 25,
+    icon: storybook,
+    name: "Storybook",
   },
 };

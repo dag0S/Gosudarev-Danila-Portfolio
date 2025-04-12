@@ -56,7 +56,7 @@ const WorkExamples: FC = () => {
           >
             {worksPageData.works.map(
               (slide, i) =>
-                i <= 3 && (
+                (i === 0 || i === 8 || i === 7 || i === 10) && (
                   <SwiperSlide key={slide.id}>
                     <div className={styles["slide"]}>
                       <img
